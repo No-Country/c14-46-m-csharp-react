@@ -1,7 +1,27 @@
+import { useEffect, useState } from "react"
+import MenuItem from "./MenuItem"
+import { getMenu } from "../../services/apiPizza"
 
 const Menu = () => {
+
+  const [menu, setMenu] = useState([])
+
+  useEffect(() => {
+    getMenu().then(data => {
+      setMenu(data)
+    })
+  }, [])
+
+
   return (
-    <div>Menu</div>
+    <main className="ml-10">
+      <h1>Menu</h1>
+      <div className='flex flex-wrap gap-10'>
+        {menu.map(item => (
+          <MenuItem key={item.id} item={item} />
+        ))}
+      </div>
+    </main>
   )
 }
 
