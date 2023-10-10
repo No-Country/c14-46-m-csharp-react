@@ -190,6 +190,7 @@
       "role": "admin",
       "phone": "123456789",
       "email": "4Hs0i@example.com",
+      "password": "1234",
       "address": "123 Main St",
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/users/user-1.jpg"
     }
