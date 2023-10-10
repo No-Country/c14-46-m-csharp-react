@@ -182,5 +182,24 @@
       ],
       "soldOut": false
     }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "admin",
+      "phone": "123456789",
+      "email": "4Hs0i@example.com",
+      "address": "123 Main St",
+      "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/users/user-1.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": ["pizza-1", "pizza-2", "pizza-3"],
+      "total": 52
+    }
   ]
 }
