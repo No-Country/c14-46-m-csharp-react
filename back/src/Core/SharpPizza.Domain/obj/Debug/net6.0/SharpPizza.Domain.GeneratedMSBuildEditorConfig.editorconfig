@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SharpPizza.Domain
-build_property.ProjectDir = C:\Users\angel\Desktop\Repositorio git\Pizzeria\backend\src\Core\SharpPizza.Domain\
+build_property.ProjectDir = C:\Users\angel\Desktop\SharpPizza\c14-46-m-csharp-react\back\src\Core\SharpPizza.Domain\

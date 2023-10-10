@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {}
+    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
+    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
         "projectName": "SharpPizza.Application",
-        "projectPath": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Application\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj"
+              "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
+                "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
+    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
         "projectName": "SharpPizza.Domain",
-        "projectPath": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
+        "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\Repositorio git\\Pizzeria\\backend\\src\\Core\\SharpPizza.Domain\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
