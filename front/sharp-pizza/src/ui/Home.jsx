@@ -6,7 +6,7 @@ const Home = () => {
       <h1 className="text-3xl">Bienvenido a Sharp Pizza</h1>
       <Link to={'/login'} className="btn btn-primary">Iniciar sesion</Link>
       <p className="text-xl font-bold">No tenes cuenta?</p>
-      <Link to={'/signup'} className="btn btn-secondary">Crear cuenta</Link>
+      <Link to={'/register'} className="btn btn-secondary">Crear cuenta</Link>
 
       <p className="text-xl font-bold">o simplemente ...</p>
 
