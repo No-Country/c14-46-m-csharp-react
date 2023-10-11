@@ -15,6 +15,8 @@ const Cart = () => {
         <CartItem key={product.id} product={product} />
       ))}
 
+      <hr />
+
       <Link className="btn btn-primary w-52 mt-10" to={'/order/new'}>Confirmar compra</Link>
       <button className="btn btn-secondary w-52">Limpiar el carrito</button>
 
