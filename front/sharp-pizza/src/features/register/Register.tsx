@@ -10,6 +10,7 @@ type FormData = {
   phoneNumber: string;
   password: string;
   confirmPassword: string;
+  address: string;
 };
 
 const Register = () => {
@@ -32,6 +33,7 @@ const Register = () => {
         .refine((value) => value.replace(/\D/g, '').length > 9, {
           message: 'Ingrese un número de telefono válido',
         }),
+      address: z.string().min(6, { message: 'La dirección debe tener al menos 6 caracteres' }),
       password: z
         .string()
         .min(6, { message: 'La contraseña debe tener al menos 6 caracteres' }),
@@ -102,6 +104,24 @@ const Register = () => {
             <span className='text-red-600'>{errors.phoneNumber.message}</span>
           )}
         </div>
+
+        <div className='mb-4'>
+          <label className='block text-xl text-gray-900'>
+            Domicilio
+          </label>
+          <input
+            id='address'
+            className='input input-bordered input-sm w-full'
+            type='text'
+            {...register('address')}
+            placeholder='Domicilio...'
+          />
+          {errors.address && (
+            <span className='text-red-600'>{errors.address.message}</span>
+          )}
+        </div>
+
+
         <div className='mb-4'>
           <label className='block text-xl text-gray-900'>Contraseña</label>
           <input
