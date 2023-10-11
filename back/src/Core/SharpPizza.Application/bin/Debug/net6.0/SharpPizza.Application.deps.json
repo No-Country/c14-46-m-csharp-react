@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SharpPizza.Application/1.0.0": {
+        "dependencies": {
+          "SharpPizza.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SharpPizza.Application.dll": {}
+        }
+      },
+      "SharpPizza.Domain/1.0.0": {
+        "runtime": {
+          "SharpPizza.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharpPizza.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpPizza.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
