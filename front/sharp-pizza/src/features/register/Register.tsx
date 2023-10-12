@@ -2,7 +2,9 @@ import { z, ZodType } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 type FormData = {
   fullName: string;
@@ -14,6 +16,8 @@ type FormData = {
 };
 
 const Register = () => {
+  const navigate = useNavigate();
+
   const schema: ZodType<FormData> = z
     .object({
       fullName: z
@@ -55,10 +59,24 @@ const Register = () => {
   });
 
   const submitData = (data: FormData) => {
-    console.log('It Worked :D', data);
+    toast.promise(axios.post('http://localhost:3001/user', {
+      name: data.fullName,
+      password: data.password,
+      role: 'user',
+      phone: data.phoneNumber,
+      email: data.email,
+      address: data.address,
+    }).then(() => {
+      navigate('/login')
+    }), {
+    loading: 'Registrando...',
+    success: 'Registrado con exito 🍕️',
+    error: 'Error en proceso de registro. Por favor intente mas tarde.',
+    })
   };
   return (
     <div className='min-h-screen flex items-center justify-center bg-gray-600'>
+
       <form
         className='bg-white h-screen shadow-2xl rounded-lg px-8 pt-6 pb-2 mb-1 w-full max-w-md'
         onSubmit={handleSubmit(submitData)}
@@ -161,6 +179,8 @@ const Register = () => {
           Registrarme
         </button>
       </form>
+
+      
     </div>
   );
 };
