@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "p0csuyV7P73e4gQwm0piEJY5jUBupy9jxhpjUEpz8q+pHr2jykdbP2xiGrat6BYMcn2FER7Ty3bs06FYROVZYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
@@ -29,5 +30,11 @@
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "KSRjAXqNwJWfmhI6/y1EXMWeDq14Ea7YqQWFzTpYn0+tGWGmi7KiqU6cDCSL2Bp3sHukEyLWMfbdahe8+M+gTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
   "logs": []
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\api\\sharppizza.api\\SharpPizza.Api.csproj": {}
   },
   "projects": {
@@ -12,13 +13,22 @@
         "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\api\\sharppizza.api\\SharpPizza.Api.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\api\\sharppizza.api\\obj\\",
+=======
+    "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Api\\SharpPizza.Api\\SharpPizza.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Api\\SharpPizza.Api\\SharpPizza.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Api\\SharpPizza.Api\\SharpPizza.Api.csproj",
+        "projectName": "SharpPizza.Api",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Api\\SharpPizza.Api\\SharpPizza.Api.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Api\\SharpPizza.Api\\obj\\",
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,17 +36,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj"
+              "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
+                "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj"
               },
-              "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj"
+              "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj"
               }
             }
           }
@@ -117,25 +128,25 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
+    "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
         "projectName": "SharpPizza.Application",
-        "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\obj\\",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -149,8 +160,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj"
+              "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
+                "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj"
               }
             }
           }
@@ -194,25 +205,25 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
+    "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
         "projectName": "SharpPizza.Domain",
-        "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -273,25 +284,25 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj": {
+    "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj",
         "projectName": "SharpPizza.Infrastructure",
-        "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\SharpPizza.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Infrastructure\\SharpPizza.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -305,11 +316,16 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
                 "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj"
               },
               "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj": {
                 "projectPath": "C:\\Users\\angel\\Desktop\\SharpPizza\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Domain\\SharpPizza.Domain.csproj"
+=======
+              "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj": {
+                "projectPath": "C:\\Users\\Daniel\\Desktop\\No Country\\c14-46-m-csharp-react\\back\\src\\Core\\SharpPizza.Application\\SharpPizza.Application.csproj"
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
               }
             }
           }
@@ -377,7 +393,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> ceb69e197cc939bd069d16a721cd9578a126682a
         }
       }
     }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8zExyxJBxJ0scB9FRw6BUmf9C9RYt24zwIk9YY3vLro=",
+  "Source": "SharpPizza.Api",
+  "BasePath": "_content/SharpPizza.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
