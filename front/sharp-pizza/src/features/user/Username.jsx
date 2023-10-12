@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 
 
 const Username = () => {
-  const username = useSelector(state => state.user.username)
+  const username = useSelector(state => state.user.name)
 
   if (!username) return null
 
