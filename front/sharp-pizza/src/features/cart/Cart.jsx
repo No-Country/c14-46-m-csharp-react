@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import CartItem from "./CartItem"
 
 const Cart = () => {
-  const username = useSelector(state => state.user.username)
+  const username = useSelector(state => state.user.name)
   const products = useSelector(state => state.cart.products)
 
   return (
