@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
+import { BsFillCartPlusFill } from "react-icons/bs"
 
 const CartOverview = () => {
 
@@ -12,7 +13,7 @@ const CartOverview = () => {
         <span className="">{products.length} pizzas -</span>
         <span>${total}</span>
       </p>
-      <Link to={'/cart'}>Open cart &rarr;</Link>
+      <div className="flex justify-center items-center gap-2"><Link to={'/cart'}>Open cart &rarr; <BsFillCartPlusFill size={25} /></Link></div>
     </div>
   )
 }
