@@ -66,6 +66,7 @@ const Register = () => {
       phone: data.phoneNumber,
       email: data.email,
       address: data.address,
+      urlImg: 'https://cdn-icons-png.flaticon.com/512/1144/1144760.png'
     }).then(() => {
       navigate('/login')
     }), {
