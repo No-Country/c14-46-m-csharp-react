@@ -6,6 +6,14 @@ import { addProduct } from "../cart/cartSlice"
 const MenuItem = ({ item }) => {
   const dispatch = useDispatch()
 
+  const newItem = {
+    id: item.id,
+    name: item.name,
+    quantity: 1,
+    unitPrice: item.unitPrice,
+    totalPrice: item.unitPrice * 1
+  }
+
   return (
     <div className="card w-50 bg-base-100 shadow-xl">
       <figure><img src={item.imageUrl} alt={item.name} /></figure>
@@ -16,7 +24,7 @@ const MenuItem = ({ item }) => {
           <p className="text-sm h-2 py-2 mb-2" key={ingredient}>{ingredient}</p>
         ))}
         <div className="card-actions">
-          <button className="btn btn-primary btn-xs" onClick={() => dispatch(addProduct(item))}>Add to cart</button>
+          <button className="btn btn-primary btn-xs" onClick={() => dispatch(addProduct(newItem))}>Agregar al carrito</button>
         </div>
       </div>
     </div >
