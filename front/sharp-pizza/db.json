@@ -369,6 +369,35 @@
       "email": "emi@gmail.com",
       "address": "343eeee",
       "id": 14
+    },
+    {
+      "name": "Leon Reyes",
+      "password": "123456",
+      "role": "user",
+      "phone": "4444444444",
+      "email": "steve@jobs.com",
+      "address": "Rio Limay 1068",
+      "id": 15
+    },
+    {
+      "name": "testeo test",
+      "password": "test23",
+      "role": "user",
+      "phone": "92994184677",
+      "email": "test@gmail.com",
+      "address": "calle test",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
+      "id": 16
+    },
+    {
+      "name": "test test",
+      "password": "123456",
+      "role": "user",
+      "phone": "92994184677",
+      "email": "steve@jobs.com",
+      "address": "testeando 236",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
+      "id": 17
     }
   ],
   "cart": [
