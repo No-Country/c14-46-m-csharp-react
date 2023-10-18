@@ -7,10 +7,12 @@ import Order from './features/order/Order';
 import Layout from './ui/Layout';
 import Login from './features/login/Login';
 import Register from './features/register/Register';
+import Error from './ui/Error';
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',

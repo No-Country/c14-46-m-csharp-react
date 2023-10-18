@@ -12,7 +12,7 @@ const Cart = () => {
   if (!products.length) return <EmptyCart />
 
   return (
-    <div className="flex flex-col justify-center items-left gap-2 pt-12">
+    <div className="flex flex-col justify-center items-left gap-4 pt-12">
       <Link to={'/menu'}>&larr; Volver al menu</Link>
       <h1 className="text-2xl">Tu pedido, {username}</h1>
 

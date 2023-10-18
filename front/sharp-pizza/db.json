@@ -5,11 +5,7 @@
       "name": "Margherita",
       "unitPrice": 12,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-1.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "basil"
-      ],
+      "ingredients": ["tomato", "mozzarella", "basil"],
       "soldOut": false
     },
     {
@@ -17,13 +13,7 @@
       "name": "Capricciosa",
       "unitPrice": 14,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-2.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "ham",
-        "mushrooms",
-        "artichoke"
-      ],
+      "ingredients": ["tomato", "mozzarella", "ham", "mushrooms", "artichoke"],
       "soldOut": true
     },
     {
@@ -31,11 +21,7 @@
       "name": "Romana",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-3.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "prosciutto"
-      ],
+      "ingredients": ["tomato", "mozzarella", "prosciutto"],
       "soldOut": false
     },
     {
@@ -43,12 +29,7 @@
       "name": "Prosciutto e Rucola",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-4.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "prosciutto",
-        "arugula"
-      ],
+      "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
       "soldOut": false
     },
     {
@@ -56,12 +37,7 @@
       "name": "Diavola",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-5.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "spicy salami",
-        "chili flakes"
-      ],
+      "ingredients": ["tomato", "mozzarella", "spicy salami", "chili flakes"],
       "soldOut": false
     },
     {
@@ -83,12 +59,7 @@
       "name": "Napoli",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-7.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "fresh tomato",
-        "basil"
-      ],
+      "ingredients": ["tomato", "mozzarella", "fresh tomato", "basil"],
       "soldOut": false
     },
     {
@@ -96,13 +67,7 @@
       "name": "Siciliana",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-8.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "anchovies",
-        "olives",
-        "capers"
-      ],
+      "ingredients": ["tomato", "mozzarella", "anchovies", "olives", "capers"],
       "soldOut": true
     },
     {
@@ -110,11 +75,7 @@
       "name": "Pepperoni",
       "unitPrice": 14,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-9.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "pepperoni"
-      ],
+      "ingredients": ["tomato", "mozzarella", "pepperoni"],
       "soldOut": false
     },
     {
@@ -122,12 +83,7 @@
       "name": "Hawaiian",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-10.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "pineapple",
-        "ham"
-      ],
+      "ingredients": ["tomato", "mozzarella", "pineapple", "ham"],
       "soldOut": false
     },
     {
@@ -135,12 +91,7 @@
       "name": "Spinach and Mushroom",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-11.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "spinach",
-        "mushrooms"
-      ],
+      "ingredients": ["tomato", "mozzarella", "spinach", "mushrooms"],
       "soldOut": false
     },
     {
@@ -177,12 +128,7 @@
       "name": "Abruzzese",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-14.jpg",
-      "ingredients": [
-        "tomato",
-        "mozzarella",
-        "prosciutto",
-        "arugula"
-      ],
+      "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
       "soldOut": false
     },
     {
@@ -204,12 +150,7 @@
       "name": "Eggplant Parmesan",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-16.jpg",
-      "ingredients": [
-        "marinara",
-        "mozzarella",
-        "eggplant",
-        "parmesan"
-      ],
+      "ingredients": ["marinara", "mozzarella", "eggplant", "parmesan"],
       "soldOut": false
     },
     {
@@ -254,162 +195,76 @@
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/users/user-1.jpg"
     },
     {
-      "fullName": "Emilio Nicolas Pino",
-      "email": "steve@jobs.com",
-      "phoneNumber": "92994184677",
+      "name": "Emilio Pino",
+      "password": "pino23",
+      "role": "user",
+      "phone": "92994184677",
+      "email": "emi@gmail.com",
       "address": "Los Zorzales 343",
-      "password": "123456",
-      "confirmPassword": "123456",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
       "id": 2
     },
     {
-      "name": "Enrique Macaya Marques",
-      "password": "123444",
+      "name": "Kevin Villegas",
+      "password": "123456",
       "role": "user",
       "phone": "4444444444",
-      "email": "lari@gmail.com",
-      "address": "St Ramon",
+      "email": "kevin@gmail.com",
+      "address": "Cordoba 235",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
       "id": 3
     },
     {
-      "name": "Enzo Perez",
+      "name": "gaston rios",
       "password": "123456",
       "role": "user",
       "phone": "92994184677",
-      "email": "emi@gmail.com",
-      "address": "Zorzales 256",
+      "email": "gaston@gmail.com",
+      "address": "moron 145",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
       "id": 4
-    },
-    {
-      "name": "Enzo Perez",
-      "password": "123456",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "3432563",
-      "id": 5
-    },
-    {
-      "name": "Emilio Nicolas Pino",
-      "password": "111111",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343326",
-      "id": 6
-    },
-    {
-      "name": "Emilio Nicolás Pino",
-      "password": "fffffff",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343ffff",
-      "id": 7
-    },
-    {
-      "name": "Emilio Pino",
-      "password": "123456",
-      "role": "user",
-      "phone": "92994184677",
-      "email": "emi@gmail.com",
-      "address": "Los Zorzales 343",
-      "id": 8
-    },
-    {
-      "name": "Enrique Macaya Marques",
-      "password": "123654",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343ddd",
-      "id": 9
-    },
-    {
-      "name": "Los Zorzales",
-      "password": "123456",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343dddd",
-      "id": 10
-    },
-    {
-      "name": "Los Zorzales",
-      "password": "dddddd",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343dddd",
-      "id": 11
-    },
-    {
-      "name": "Enrique Macaya Marques",
-      "password": "eeerty",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "343eeeee",
-      "id": 12
-    },
-    {
-      "name": "Enzo Perez",
-      "password": "123123",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "Rio Limay 1068",
-      "id": 13
-    },
-    {
-      "name": "Emilio Nicolas Pino",
-      "password": "eeeddd",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "emi@gmail.com",
-      "address": "343eeee",
-      "id": 14
-    },
-    {
-      "name": "Leon Reyes",
-      "password": "123456",
-      "role": "user",
-      "phone": "4444444444",
-      "email": "steve@jobs.com",
-      "address": "Rio Limay 1068",
-      "id": 15
-    },
-    {
-      "name": "testeo test",
-      "password": "test23",
-      "role": "user",
-      "phone": "92994184677",
-      "email": "test@gmail.com",
-      "address": "calle test",
-      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
-      "id": 16
-    },
-    {
-      "name": "test test",
-      "password": "123456",
-      "role": "user",
-      "phone": "92994184677",
-      "email": "steve@jobs.com",
-      "address": "testeando 236",
-      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
-      "id": 17
     }
   ],
   "cart": [
     {
       "id": 1,
       "userId": 1,
-      "products": [
-        "pizza-1",
-        "pizza-2",
-        "pizza-3"
-      ],
+      "products": ["pizza-1", "pizza-2", "pizza-3"],
       "total": 52
+    }
+  ],
+  "order": [
+    {
+      "id": "ABCDEF",
+      "customer": "Emilio Pino",
+      "phone": "92994184677",
+      "address": "Los Zorzales 343",
+      "date": "2023-10-18",
+      "products": [
+        {
+          "id": 7,
+          "name": "Napoli",
+          "quantity": 3,
+          "unitPrice": 16,
+          "totalPrice": 48
+        },
+        {
+          "id": 5,
+          "name": "Diavola",
+          "quantity": 2,
+          "unitPrice": 16,
+          "totalPrice": 32
+        },
+        {
+          "id": 3,
+          "name": "Romana",
+          "quantity": 1,
+          "unitPrice": 15,
+          "totalPrice": 15
+        }
+      ],
+      "position": "-9.000,38.000",
+      "orderPrice": 95
     }
   ]
 }
