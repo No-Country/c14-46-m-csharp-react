@@ -7,13 +7,13 @@ const UpdateItems = ({ id, quantity }) => {
   const dispatch = useDispatch()
   return (
     <div className="flex justify-center items-center gap-2">
-      <button className="btn btn-circle btn-outline" onClick={() => dispatch(decreaseQuantity(id))} >
+      <button className="btn btn-circle btn-outline btn-sm" onClick={() => dispatch(decreaseQuantity(id))} >
         -
       </button>
 
       <span>{quantity}</span>
 
-      <button className="btn btn-circle btn-outline" onClick={() => dispatch(increaseQuantity(id))}>
+      <button className="btn btn-circle btn-outline btn-sm" onClick={() => dispatch(increaseQuantity(id))}>
         +
       </button>
     </div>
