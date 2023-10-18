@@ -1,10 +1,13 @@
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 
-import { addProduct } from '../cart/cartSlice';
+import { useDispatch, useSelector } from "react-redux"
+import { addProduct, deleteProduct, getCurrentQuantityById } from "../cart/cartSlice"
+import UpdateItems from "../cart/UpdateItems"
 
 const MenuItem = ({ item }) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
+  const currentQuantity = useSelector(getCurrentQuantityById(item.id))
 
   const newItem = {
     id: item.id,
@@ -32,13 +35,15 @@ const MenuItem = ({ item }) => {
             {ingredient.charAt(0).toUpperCase() + ingredient.slice(1)}
           </p>
         ))}
-        <div className='card-actions justify-start'>
-          <button
-            className='btn btn-active btn-neutral my-4'
-            onClick={addToCart}
-          >
-            Agregar al carrito
-          </button>
+        <div className="card-actions">
+          {!currentQuantity && <button className="btn btn-primary btn-xs" onClick={() => dispatch(addProduct(newItem))}>Agregar al carrito</button>}
+
+          {currentQuantity > 0
+            && <div className="flex items-center justify-center gap-2">
+              <UpdateItems id={item.id} quantity={currentQuantity} />
+              <button className="btn btn-warning btn-xs" onClick={() => dispatch(deleteProduct(item.id))}>Quitar</button>
+            </div>}
+
         </div>
       </div>
     </div>
