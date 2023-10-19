@@ -16,13 +16,13 @@ type FormData = {
 const Login = () => {
   const [users, setUsers] = React.useState([]);
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getUsers().then(data => {
-      setUsers(data)
-    })
-  }, [])
+    getUsers().then((data) => {
+      setUsers(data);
+    });
+  }, []);
 
   const schema: ZodType<FormData> = z.object({
     email: z.string().email({ message: 'Dirección de correo inválida' }),
@@ -38,19 +38,21 @@ const Login = () => {
   });
 
   const submitData = (data: FormData) => {
-  const loggedUser = users.find(user => user.email === data.email)
+    const loggedUser = users.find((user) => user.email === data.email);
 
-    if(data.email === loggedUser?.email && data.password === loggedUser?.password){
-      toast.success('Logueado con exito')
-      dispatch(updateUser(loggedUser))
-      navigate('/menu')
+    if (data.email === loggedUser?.email && data.password === loggedUser?.password) {
+      toast.success('Logueado con éxito');
+      dispatch(updateUser(loggedUser));
+      navigate('/menu');
     } else {
-      toast.error('Email o contraseña incorrectos')
+      toast.error('Email o contraseña incorrectos');
     }
   };
+
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-600 px-6'>
-      <div className='max-w-md w-full bg-white p-6 rounded-lg shadow-lg'>
+    <div className='min-h-screen flex items-center justify-center' style={{ background: 'linear-gradient(135deg, #4a90e2, #7052cc)' }}>
+     <div className='max-w-md w-full bg-[#f0f4fd] p-6 rounded-md shadow-md'>
+
         <form onSubmit={handleSubmit(submitData)}>
           <div className='mb-4'>
             <label className='block text-xl text-gray-900'>Email</label>
@@ -60,9 +62,7 @@ const Login = () => {
               {...register('email')}
               placeholder='Email...'
             />
-            {errors.email && (
-              <span className='text-red-600'>{errors.email.message}</span>
-            )}
+            {errors.email && <span className='text-red-600'>{errors.email.message}</span>}
           </div>
           <div className='mb-4'>
             <label className='block text-xl text-gray-900'>Password</label>
@@ -72,9 +72,7 @@ const Login = () => {
               {...register('password')}
               placeholder='Contraseña...'
             />
-            {errors.password && (
-              <span className='text-red-600'>{errors.password.message}</span>
-            )}
+            {errors.password && <span className='text-red-600'>{errors.password.message}</span>}
           </div>
           <a href='/register' className='text-blue-800'>
             Olvidé mi contraseña
@@ -83,10 +81,7 @@ const Login = () => {
           <Link to='/register' className='text-blue-800'>
             Crear Cuenta
           </Link>
-          <button
-            type='submit'
-            className='btn btn-active btn-secondary w-full mt-5'
-          >
+          <button type='submit' className='btn btn-active btn-secondary w-full mt-5'>
             Iniciar Sesión
           </button>
         </form>
