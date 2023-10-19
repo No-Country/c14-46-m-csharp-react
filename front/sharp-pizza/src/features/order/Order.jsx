@@ -16,7 +16,7 @@ const Order = () => {
   return (
     <div className="px-4 py-6 space-y-8">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-xl font-semibold">Order #{lastOrder?.orderId} {lastOrder?.status}</h2>
+        <h2 className="text-xl font-semibold">Order #{lastOrder?.orderId} en {lastOrder?.status}</h2>
 
         <div className="space-x-2">
           <span className="rounded-full bg-green-500 px-3 py-1 text-sm font-semibold uppercase traking-wide text-green-50">Pedido en preparacion</span>
