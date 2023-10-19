@@ -5,7 +5,11 @@
       "name": "Margherita",
       "unitPrice": 12,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-1.jpg",
-      "ingredients": ["tomato", "mozzarella", "basil"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "basil"
+      ],
       "soldOut": false
     },
     {
@@ -13,7 +17,13 @@
       "name": "Capricciosa",
       "unitPrice": 14,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-2.jpg",
-      "ingredients": ["tomato", "mozzarella", "ham", "mushrooms", "artichoke"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "ham",
+        "mushrooms",
+        "artichoke"
+      ],
       "soldOut": true
     },
     {
@@ -21,7 +31,11 @@
       "name": "Romana",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-3.jpg",
-      "ingredients": ["tomato", "mozzarella", "prosciutto"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "prosciutto"
+      ],
       "soldOut": false
     },
     {
@@ -29,7 +43,12 @@
       "name": "Prosciutto e Rucola",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-4.jpg",
-      "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "prosciutto",
+        "arugula"
+      ],
       "soldOut": false
     },
     {
@@ -37,7 +56,12 @@
       "name": "Diavola",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-5.jpg",
-      "ingredients": ["tomato", "mozzarella", "spicy salami", "chili flakes"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "spicy salami",
+        "chili flakes"
+      ],
       "soldOut": false
     },
     {
@@ -59,7 +83,12 @@
       "name": "Napoli",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-7.jpg",
-      "ingredients": ["tomato", "mozzarella", "fresh tomato", "basil"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "fresh tomato",
+        "basil"
+      ],
       "soldOut": false
     },
     {
@@ -67,7 +96,13 @@
       "name": "Siciliana",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-8.jpg",
-      "ingredients": ["tomato", "mozzarella", "anchovies", "olives", "capers"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "anchovies",
+        "olives",
+        "capers"
+      ],
       "soldOut": true
     },
     {
@@ -75,7 +110,11 @@
       "name": "Pepperoni",
       "unitPrice": 14,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-9.jpg",
-      "ingredients": ["tomato", "mozzarella", "pepperoni"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "pepperoni"
+      ],
       "soldOut": false
     },
     {
@@ -83,7 +122,12 @@
       "name": "Hawaiian",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-10.jpg",
-      "ingredients": ["tomato", "mozzarella", "pineapple", "ham"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "pineapple",
+        "ham"
+      ],
       "soldOut": false
     },
     {
@@ -91,7 +135,12 @@
       "name": "Spinach and Mushroom",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-11.jpg",
-      "ingredients": ["tomato", "mozzarella", "spinach", "mushrooms"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "spinach",
+        "mushrooms"
+      ],
       "soldOut": false
     },
     {
@@ -128,7 +177,12 @@
       "name": "Abruzzese",
       "unitPrice": 16,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-14.jpg",
-      "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
+      "ingredients": [
+        "tomato",
+        "mozzarella",
+        "prosciutto",
+        "arugula"
+      ],
       "soldOut": false
     },
     {
@@ -150,7 +204,12 @@
       "name": "Eggplant Parmesan",
       "unitPrice": 15,
       "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-16.jpg",
-      "ingredients": ["marinara", "mozzarella", "eggplant", "parmesan"],
+      "ingredients": [
+        "marinara",
+        "mozzarella",
+        "eggplant",
+        "parmesan"
+      ],
       "soldOut": false
     },
     {
@@ -249,7 +308,11 @@
     {
       "id": 1,
       "userId": 1,
-      "products": ["pizza-1", "pizza-2", "pizza-3"],
+      "products": [
+        "pizza-1",
+        "pizza-2",
+        "pizza-3"
+      ],
       "total": 52
     }
   ],
@@ -510,6 +573,37 @@
       "orderPrice": 31,
       "status": "preparacion",
       "id": 11
+    },
+    {
+      "orderId": "9e1e0f1ab5",
+      "customer": "John Doe",
+      "phone": "123456789",
+      "address": "123 Main St",
+      "date": "10/19/2023, 5:49:04 PM",
+      "products": [
+        {
+          "id": 1,
+          "name": "Margherita",
+          "quantity": 3,
+          "unitPrice": 12
+        },
+        {
+          "id": 2,
+          "name": "Capricciosa",
+          "quantity": 3,
+          "unitPrice": 14
+        },
+        {
+          "id": 3,
+          "name": "Romana",
+          "quantity": 4,
+          "unitPrice": 15
+        }
+      ],
+      "paymentMethod": "efectivo",
+      "orderPrice": 138,
+      "status": "preparacion",
+      "id": 12
     }
   ]
 }
