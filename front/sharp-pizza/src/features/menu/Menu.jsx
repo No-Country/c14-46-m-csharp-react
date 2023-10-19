@@ -12,10 +12,8 @@ const Menu = () => {
     })
   }, [])
 
-
   return (
     <main className="ml-10">
-      <h1>Menu</h1>
       <div className='flex flex-wrap gap-10'>
         {menu.map(item => (
           <MenuItem key={item.id} item={item} />
