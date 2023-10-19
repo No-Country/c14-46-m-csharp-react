@@ -308,6 +308,7 @@
   ],
   "order": [
     {
+      "id": 1,
       "orderId": "ABCDEF",
       "customer": "Emilio Pino",
       "phone": "92994184677",
@@ -338,6 +339,29 @@
       ],
       "paymentMethod": "efectivo",
       "orderPrice": 95
+    },
+    {
+      "customer": "John Doe",
+      "phone": "123456789",
+      "address": "123 Main St",
+      "date": "10/19/2023",
+      "products": [
+        {
+          "id": 1,
+          "name": "Margherita",
+          "quantity": 3,
+          "unitPrice": 12
+        },
+        {
+          "id": 2,
+          "name": "Capricciosa",
+          "quantity": 1,
+          "unitPrice": 14
+        }
+      ],
+      "paymentMethod": "mercado pago",
+      "orderPrice": 50,
+      "id": 2
     }
   ]
 }
