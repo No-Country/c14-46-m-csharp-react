@@ -1,0 +1,14 @@
+[
+    {
+        "nombre" : "Juanita Perez",
+        "rating": 5,
+        "comentario": "El queso es delicioso",
+        "productId": 1
+    },
+    {
+        "nombre" : "Juanita Perez",
+        "rating": 5,
+        "comentario": "Muy rica la pizza",
+        "productId": 2
+    }
+]
