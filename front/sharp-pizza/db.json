@@ -282,6 +282,16 @@
       "address": "moron 145",
       "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
       "id": 4
+    },
+    {
+      "name": "nico bravo",
+      "password": "123456",
+      "role": "user",
+      "phone": "92994184677",
+      "email": "nico@gmail.com",
+      "address": "Los Zorzales 343",
+      "urlImg": "https://cdn-icons-png.flaticon.com/512/1144/1144760.png",
+      "id": 5
     }
   ],
   "cart": [
@@ -298,11 +308,11 @@
   ],
   "order": [
     {
-      "id": "ABCDEF",
+      "orderId": "ABCDEF",
       "customer": "Emilio Pino",
       "phone": "92994184677",
       "address": "Los Zorzales 343",
-      "date": "2023-10-18",
+      "date": "10-18-2023",
       "products": [
         {
           "id": 7,
@@ -326,7 +336,7 @@
           "totalPrice": 15
         }
       ],
-      "position": "-9.000,38.000",
+      "paymentMethod": "efectivo",
       "orderPrice": 95
     }
   ]
