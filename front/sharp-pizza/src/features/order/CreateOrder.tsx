@@ -1,8 +1,8 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import EmptyCart from "../cart/EmptyCart"
 import toast from "react-hot-toast"
 import axios from "axios"
-import { getTotalPrice } from "../cart/cartSlice"
+import { clearCart, getTotalPrice } from "../cart/cartSlice"
 import { useNavigate } from "react-router-dom"
 import { ZodType, z } from "zod"
 import { useForm } from "react-hook-form"
@@ -22,21 +22,20 @@ const CreateOrder = () => {
   const products = useSelector(state => state.cart.products)
   const totalPrice = useSelector(getTotalPrice)
   
-  if (!products.length) return <EmptyCart />
-
+  
   const navigate = useNavigate()
-
+  const dispatch = useDispatch()
+  
   const schema: ZodType<FormData> = z.object({
     customer: z.string(),
     phone: z.string(),
     address: z.string(),
     paymentMethod: z.string(),
   })
-
+  
   const {register, handleSubmit} = useForm<FormData>({
     resolver: zodResolver(schema),
   })
-
 
   const handleOrder = (data: FormData) => {
     toast.promise(axios.post('http://localhost:3001/order', {
@@ -44,12 +43,14 @@ const CreateOrder = () => {
       customer: data.customer,
       phone: data.phone,
       address: data.address,
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleString(),
       products,
       paymentMethod: data.paymentMethod,
-      orderPrice: totalPrice
+      orderPrice: totalPrice,
+      status: 'preparacion'
     }).then(() => {
-      navigate('/menu')
+      navigate('/order')
+      dispatch(clearCart())
     }), {
       loading: 'Enviando...',
       success: 'Gracias por tu compra 🍕',
@@ -99,7 +100,7 @@ const CreateOrder = () => {
         </fieldset>
 
         <div>
-          <button className="btn btn-primary">Confirmar pedido</button>
+          <button className="btn btn-primary">Confirmar pedido por ${totalPrice}</button>
         </div>
       </form>
     </div>
