@@ -14,7 +14,7 @@ const CartItem = ({ product }) => {
       <h2>{product.quantity} x {product.name}</h2> <span>${product.unitPrice * product.quantity}</span>
       <UpdateItems id={product.id} quantity={product.quantity} />
 
-      <button className="btn btn-warning w-20" onClick={() => dispatch(deleteProduct(product.id))}>Quitar</button>
+      <button className="btn btn-warning w-20 btn-sm" onClick={() => dispatch(deleteProduct(product.id))}>Quitar</button>
 
 
     </div>
