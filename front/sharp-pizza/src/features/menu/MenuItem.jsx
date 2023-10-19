@@ -1,16 +1,19 @@
-/* eslint-disable react/prop-types */
-
-import { useDispatch, useSelector } from "react-redux"
-import { addProduct, deleteProduct, getCurrentQuantityById } from "../cart/cartSlice"
-import UpdateItems from "../cart/UpdateItems"
+import toast from 'react-hot-toast';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  addProduct,
+  deleteProduct,
+  getCurrentQuantityById,
+} from '../cart/cartSlice';
+import UpdateItems from '../cart/UpdateItems';
 import toast from "react-hot-toast"
 import { useNavigate } from "react-router-dom"
 
 const MenuItem = ({ item }) => {
   const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const currentQuantity = useSelector(getCurrentQuantityById(item.id))
+  const currentQuantity = useSelector(getCurrentQuantityById(item.id));
   const currentUser = useSelector(state => state.user)
 
   const newItem = {
