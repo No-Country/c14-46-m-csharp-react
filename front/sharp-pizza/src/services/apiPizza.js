@@ -22,21 +22,13 @@ export const getUsers = async () => {
   return data
 }
 
-export const createOrder = async (order) => {
-  try {
-    const response = await fetch(`${API_URL}/order`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(order),
-    })
-    if (!response.ok) {
-      throw new Error("Failed to create order")
-    }
-    const data = await response.json()
-    return data
-  } catch {
-    throw new Error("Failed to create order")
+export const getOrders = async () => {
+  const response = await fetch(`${API_URL}/order`)
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch orders")
   }
+
+  const data = await response.json()
+  return data
 }
