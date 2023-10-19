@@ -13,7 +13,7 @@ const Layout = () => {
       <Header />
       <Toaster toastOptions={{ duration: 3000 }} />
 
-      <main className='m-20'>
+      <main className=''>
         <Outlet />
       </main>
       {products.length > 0 && <CartOverview />}
