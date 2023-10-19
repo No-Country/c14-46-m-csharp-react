@@ -6,10 +6,10 @@ const Menu = () => {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    getMenu().then((data) => {
-      setMenu(data);
-    });
-  }, []);
+    getMenu().then(data => {
+      setMenu(data)
+    })
+  }, [])
 
   return (
     <main className='mx-10'>

@@ -7,7 +7,7 @@ const Username = () => {
   if (!username) return null
 
   return (
-    <h1 className="text-xl">{username}</h1>
+    <h1 className="text-xl">{username.toUpperCase()}</h1>
   )
 }
 

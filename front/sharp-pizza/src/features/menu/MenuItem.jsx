@@ -1,28 +1,33 @@
-import toast from 'react-hot-toast';
-import { useDispatch, useSelector } from 'react-redux';
-import {
-  addProduct,
-  deleteProduct,
-  getCurrentQuantityById,
-} from '../cart/cartSlice';
-import UpdateItems from '../cart/UpdateItems';
+/* eslint-disable react/prop-types */
+
+import { useDispatch, useSelector } from "react-redux"
+import { addProduct, deleteProduct, getCurrentQuantityById } from "../cart/cartSlice"
+import UpdateItems from "../cart/UpdateItems"
+import toast from "react-hot-toast"
+import { useNavigate } from "react-router-dom"
 
 const MenuItem = ({ item }) => {
-  const dispatch = useDispatch();
-  const currentQuantity = useSelector(getCurrentQuantityById(item.id));
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
+  const currentQuantity = useSelector(getCurrentQuantityById(item.id))
+  const currentUser = useSelector(state => state.user)
 
   const newItem = {
     id: item.id,
     name: item.name,
     quantity: 1,
-    unitPrice: item.unitPrice,
-    totalPrice: item.unitPrice * 1,
-  };
+    unitPrice: item.unitPrice
+  }
 
-  const addToCart = () => {
-    dispatch(addProduct(newItem));
-    toast.success('Producto agregado!');
-  };
+  const handleAddToCart = () => {
+    if (currentUser.name) {
+      dispatch(addProduct(newItem))
+    } else {
+      toast.error('Debe iniciar sesión para agregar al carrito')
+      navigate('/login')
+    }
+  }
 
   return (
     <div className='card w-50 bg-base-100 shadow-xl'>
@@ -37,12 +42,8 @@ const MenuItem = ({ item }) => {
             {ingredient.charAt(0).toUpperCase() + ingredient.slice(1)}
           </p>
         ))}
-        <div className='card-actions'>
-          {!currentQuantity && (
-            <button className='btn btn-primary my-6' onClick={addToCart}>
-              Agregar al carrito
-            </button>
-          )}
+        <div className="card-actions">
+          {!currentQuantity && <button className="btn btn-primary btn-xs" onClick={handleAddToCart}>Agregar al carrito</button>}
 
           {currentQuantity > 0 && (
             <div className='flex items-center justify-center gap-2'>
