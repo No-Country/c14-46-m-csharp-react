@@ -3,16 +3,29 @@ import Username from "../features/user/Username"
 import { HiOutlineLogout } from "react-icons/hi"
 import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../features/user/userSlice"
-import { clearCart, useNavigate } from "../features/cart/cartSlice"
-import { useDispatch, useSelector } from 'react-redux';
-import Username from '../features/user/Username';
-import { logout } from '../features/user/userSlice';
-import { clearCart } from '../features/cart/cartSlice';
+import { clearCart } from "../features/cart/cartSlice"
+import { useState } from "react"
+import { BiLogIn } from 'react-icons/bi';
+import { BsCart } from 'react-icons/bs';
+import { FiSearch } from 'react-icons/fi';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const username = useSelector(state => state.user.name)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
+  const [searchOpen, setSearchOpen] = useState(false);
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+  };
+
+  const handleInputClick = (e) => {
+    e.stopPropagation(); // Evita que se propague el evento de click al contenedor
+  };
 
   const handleLogout = () => {
     dispatch(logout())
@@ -71,7 +84,9 @@ const Header = () => {
           </div>
 
         </header>
-        )
+      </div>
+    </div>
+  )
 }
 
-        export default Header
+export default Header
