@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import toast from 'react-hot-toast';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -6,7 +7,6 @@ import {
   getCurrentQuantityById,
 } from '../cart/cartSlice';
 import UpdateItems from '../cart/UpdateItems';
-import toast from "react-hot-toast"
 import { useNavigate } from "react-router-dom"
 
 const MenuItem = ({ item }) => {
