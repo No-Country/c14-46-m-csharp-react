@@ -3,7 +3,11 @@ import Username from "../features/user/Username"
 import { HiOutlineLogout } from "react-icons/hi"
 import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../features/user/userSlice"
-import { clearCart } from "../features/cart/cartSlice"
+import { clearCart, useNavigate } from "../features/cart/cartSlice"
+import { useDispatch, useSelector } from 'react-redux';
+import Username from '../features/user/Username';
+import { logout } from '../features/user/userSlice';
+import { clearCart } from '../features/cart/cartSlice';
 
 const Header = () => {
   const username = useSelector(state => state.user.name)
@@ -48,10 +52,9 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to='/login' className='hover:text-blue-500 flex items-center'>
+          {username ? <div className='flex items-center'><Username /><BiLogIn className='ml-2' size={30} onClick={handleLogout} /></div> : <Link to='/login' className='hover:text-blue-500 flex items-center'>
             Iniciar Sesión
-            <BiLogIn className='ml-2' size={20} />
-          </Link>
+          </Link>}
         </li>
       </ul>
 
