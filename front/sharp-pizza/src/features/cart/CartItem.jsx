@@ -10,11 +10,11 @@ const CartItem = ({ product }) => {
 
 
   return (
-    <div className="flex justify-around ml-4 gap-12 items-center max-w-sm">
-      <h2>{product.quantity} x {product.name}</h2> <span>${product.unitPrice * product.quantity}</span>
+    <div className="grid grid-cols-4 gap-8 max-w-sm items-center text-slate-900">
+      <h2>{product.quantity} x {product.name}</h2><p>${product.unitPrice * product.quantity}</p>
       <UpdateItems id={product.id} quantity={product.quantity} />
 
-      <button className="btn btn-warning w-20 btn-sm" onClick={() => dispatch(deleteProduct(product.id))}>Quitar</button>
+      <button className="btn btn-warning w-20 btn-xs" onClick={() => dispatch(deleteProduct(product.id))}>Quitar</button>
 
 
     </div>
