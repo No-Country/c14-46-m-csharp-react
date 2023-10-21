@@ -59,19 +59,19 @@ const CreateOrder = () => {
   }
 
   return (
-    <div className="px-4 py-6">
-      <h2 className="mb-8 text-xl font-semibold">Listo para confirmar tu pedido? Vamos!</h2>
+    <div className="bg-stone-100 p-36 text-slate-900 flex flex-col justify-center items-center">
+      <h2 className="mb-8 text-2xl font-semibold">Listo para confirmar tu pedido? Vamos!</h2>
 
       <form onSubmit={handleSubmit(handleOrder)}>
         <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center">
           <label className="sm:basis-40">Pedido a nombre de:</label>
-          <input className="input grow" type="text" defaultValue={client.name} required {...register('customer')} />
+          <input className="input input-primary bg-slate-300" type="text" defaultValue={client.name} required {...register('customer')} />
         </div>
 
         <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center">
           <label className="sm:basis-40">Teléfono de contacto:</label>
           <div className="grow">
-            <input className="input w-full" type="tel" defaultValue={client.phone} required {...register('phone')} />
+            <input className="input input-primary bg-slate-300" type="tel" defaultValue={client.phone} required {...register('phone')} />
           </div>
         </div>
 
@@ -79,7 +79,7 @@ const CreateOrder = () => {
           <label className="sm:basis-40">Dirección de envio:</label>
           <div className="grow">
             <input
-              className="input w-full"
+              className="input input-primary bg-slate-300"
               type="text" defaultValue={client.address} required {...register('address')} />
           </div>
         </div>
@@ -100,7 +100,7 @@ const CreateOrder = () => {
         </fieldset>
 
         <div>
-          <button className="btn btn-primary">Confirmar pedido por ${totalPrice}</button>
+          <button className="btn btn-primary btn-sm">Confirmar pedido por ${totalPrice}</button>
         </div>
       </form>
     </div>

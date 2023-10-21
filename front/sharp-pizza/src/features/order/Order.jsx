@@ -14,9 +14,9 @@ const Order = () => {
   const lastOrder = orders[orders.length - 1]
 
   return (
-    <div className="px-4 py-6 space-y-8">
+    <div className="p-44 bg-stone-100 rounded-lg space-y-8 h-screen text-slate-900">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-xl font-semibold">Order #{lastOrder?.orderId} en {lastOrder?.status}</h2>
+        <h2 className="text-xl font-semibold ">Pedido #{lastOrder?.orderId} en {lastOrder?.status}</h2>
 
         <div className="space-x-2">
           <span className="rounded-full bg-green-500 px-3 py-1 text-sm font-semibold uppercase traking-wide text-green-50">Pedido en preparacion</span>
@@ -34,7 +34,7 @@ const Order = () => {
       </ul>
 
       <div className="space-y-2 bg-stone-200 px-6 py-5">
-        <p className="text-sm font-medium text-stone-600">Precio total: ${lastOrder?.orderPrice}</p>
+        <p className="text-md font-bold text-stone-950">Precio total: ${lastOrder?.orderPrice}</p>
       </div>
     </div>
   )
