@@ -49,13 +49,13 @@ const Login = () => {
     }
   };
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-600 px-6'>
-      <div className='max-w-md w-full bg-white p-6 rounded-lg shadow-lg'>
+    <div className='min-h-screen flex items-center justify-center bg-stone-100 px-6'>
+      <div className='max-w-md w-full bg-lime-200 p-6 rounded-lg shadow-lg'>
         <form onSubmit={handleSubmit(submitData)}>
           <div className='mb-4'>
-            <label className='block text-xl text-gray-900'>Email</label>
+            <label className='block text-xl text-slate-900'>Email</label>
             <input
-              className='input input-bordered input-sm w-full'
+              className='input input-success bg-slate-900 input-sm w-full'
               type='email'
               {...register('email')}
               placeholder='Email...'
@@ -65,9 +65,9 @@ const Login = () => {
             )}
           </div>
           <div className='mb-4'>
-            <label className='block text-xl text-gray-900'>Password</label>
+            <label className='block text-xl text-slate-800'>Password</label>
             <input
-              className='input input-bordered input-sm w-full'
+              className='input input-success bg-slate-800 input-sm w-full'
               type='password'
               {...register('password')}
               placeholder='Contraseña...'
@@ -76,16 +76,16 @@ const Login = () => {
               <span className='text-red-600'>{errors.password.message}</span>
             )}
           </div>
-          <a href='/register' className='text-blue-800'>
+          <a href='/register' className='text-blue-800 font-bold'>
             Olvidé mi contraseña
           </a>
           <br />
-          <Link to='/register' className='text-blue-800'>
+          <Link to='/register' className='text-blue-800 font-bold'>
             Crear Cuenta
           </Link>
           <button
             type='submit'
-            className='btn btn-active btn-secondary w-full mt-5'
+            className='btn btn-active btn-primary btn-sm w-full mt-5'
           >
             Iniciar Sesión
           </button>

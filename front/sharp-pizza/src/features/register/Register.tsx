@@ -76,14 +76,14 @@ const Register = () => {
     })
   };
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-600'>
+    <div className='min-h-screen flex items-center justify-center bg-stone-100'>
 
       <form
-        className='bg-white h-screen shadow-2xl rounded-lg px-8 pt-6 pb-2 mb-1 w-full max-w-md'
+        className='bg-lime-200 shadow-2xl rounded-lg px-8 pt-6 pb-2 mb-1 w-full max-w-md'
         onSubmit={handleSubmit(submitData)}
       >
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>Nombre Completo</label>
+          <label className='block text-xl text-slate-900'>Nombre Completo</label>
           <input
             id='fullName'
             className='input input-bordered input-sm w-full'
@@ -96,10 +96,10 @@ const Register = () => {
           )}
         </div>
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>Email</label>
+          <label className='block text-xl text-slate-900'>Email</label>
           <input
             id='email'
-            className='input input-bordered input-sm w-full'
+            className='input input-success input-sm w-full'
             type='email'
             {...register('email')}
             placeholder='Email...'
@@ -109,12 +109,12 @@ const Register = () => {
           )}
         </div>
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>
+          <label className='block text-xl text-slate-900'>
             Número de teléfono
           </label>
           <input
             id='phoneNumber'
-            className='input input-bordered input-sm w-full'
+            className='input input-success input-sm w-full'
             type='text'
             {...register('phoneNumber')}
             placeholder='Número de teléfono...'
@@ -125,12 +125,12 @@ const Register = () => {
         </div>
 
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>
+          <label className='block text-xl text-slate-900'>
             Domicilio
           </label>
           <input
             id='address'
-            className='input input-bordered input-sm w-full'
+            className='input input-success input-sm w-full'
             type='text'
             {...register('address')}
             placeholder='Domicilio...'
@@ -142,9 +142,9 @@ const Register = () => {
 
 
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>Contraseña</label>
+          <label className='block text-xl text-slate-900'>Contraseña</label>
           <input
-            className='input input-bordered input-sm w-full'
+            className='input input-success input-sm w-full'
             type='password'
             {...register('password')}
             placeholder='Password...'
@@ -154,11 +154,11 @@ const Register = () => {
           )}
         </div>
         <div className='mb-4'>
-          <label className='block text-xl text-gray-900'>
+          <label className='block text-xl text-slate-900'>
             Confirmar Contraseña
           </label>
           <input
-            className='input input-bordered input-sm w-full'
+            className='input input-success input-sm w-full'
             id='confirmPassword'
             type='password'
             {...register('confirmPassword')}
@@ -170,12 +170,12 @@ const Register = () => {
             </span>
           )}
         </div>
-        <Link to='/login' className='text-blue-800'>
+        <Link to='/login' className='text-blue-800 font-bold'>
           Ya tengo una cuenta
         </Link>
         <button
           type='submit'
-          className='btn btn-active btn-secondary w-full mt-5'
+          className='btn btn-active btn-primary btn-sm w-full mt-5'
         >
           Registrarme
         </button>
