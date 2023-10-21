@@ -30,20 +30,20 @@ const MenuItem = ({ item }) => {
   }
 
   return (
-    <div className='card w-50 bg-base-100 shadow-xl'>
+    <div className='card w-96 shadow-xl bg-lime-300'>
       <figure>
-        <img src={item.imageUrl} alt={item.name} className=' rounded-md' />
+        <img src={item.imageUrl} alt={item.name} className="w-full" />
       </figure>
-      <div className='card-body'>
+      <div className='card-body text-slate-900'>
         <h2 className='card-title text-2xl font-bold'>{item.name}</h2>
         <p className='font-bold text-xl'>${item.unitPrice}</p>
         {item.ingredients.map((ingredient) => (
-          <p className='text-sm h-2 py-2 mb-2' key={ingredient}>
+          <p className='text-sm h-2 py-2 mb-2 font-bold' key={ingredient}>
             {ingredient.charAt(0).toUpperCase() + ingredient.slice(1)}
           </p>
         ))}
         <div className="card-actions">
-          {!currentQuantity && <button className="btn btn-primary btn-xs" onClick={handleAddToCart}>Agregar al carrito</button>}
+          {!currentQuantity && <button className="btn btn-accent btn-xs" onClick={handleAddToCart}>Agregar al carrito</button>}
 
           {currentQuantity > 0 && (
             <div className='flex items-center justify-center gap-2'>
