@@ -4,7 +4,7 @@
 const OrderItem = ({ quantity, name, totalPrice }) => {
   return (
     <li className="py-3">
-      <div className="flex items-center justify-between gap-4 text-sm">
+      <div className="grid grid-cols-2 text-md gap-10">
         <p>
           <span className="font-bold">{quantity}&times;</span> {name}
         </p>
