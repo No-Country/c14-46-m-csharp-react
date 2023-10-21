@@ -13,7 +13,7 @@ const Layout = () => {
       <Header />
       <Toaster toastOptions={{ duration: 3000 }} />
 
-      <main className='bg-silver p-20'>
+      <main>
         <Outlet />
       </main>
       {products.length > 0 && <CartOverview />}
