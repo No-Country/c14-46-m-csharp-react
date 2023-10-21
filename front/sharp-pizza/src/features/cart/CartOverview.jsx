@@ -14,7 +14,7 @@ const CartOverview = () => {
         <span className="">{totalQuantity} pizzas -</span>
         <span>${totalPrice}</span>
       </p>
-      <div className="flex justify-center items-center gap-2"><Link to={'/cart'}>Ir al carrito &rarr; <BsFillCartPlusFill size={25} /></Link></div>
+      <Link to={'/cart'}><BsFillCartPlusFill size={25} /></Link>
     </div>
   )
 }
