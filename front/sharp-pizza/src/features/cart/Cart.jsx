@@ -12,9 +12,9 @@ const Cart = () => {
   if (!products.length) return <EmptyCart />
 
   return (
-    <div className="flex flex-col justify-center items-left gap-4 pt-12">
+    <div className="flex flex-col justify-center items-center gap-4 p-24 bg-stone-100 h-screen">
       <Link to={'/menu'}>&larr; Volver al menu</Link>
-      <h1 className="text-2xl">Tu pedido, {username}</h1>
+      <h1 className="text-2xl text-slate-900">Tu pedido, {username}</h1>
 
       {products.map(product => (
         <CartItem key={product.id} product={product} />
@@ -22,8 +22,8 @@ const Cart = () => {
 
       <hr />
 
-      <Link className="btn btn-primary w-52 mt-10" to={'/order/new'}>Confirmar compra</Link>
-      <button className="btn btn-secondary w-52" onClick={() => dispatch(clearCart())}>Limpiar el carrito</button>
+      <Link className="btn btn-primary btn-sm w-52 mt-10" to={'/order/new'}>Confirmar compra</Link>
+      <button className="btn btn-secondary btn-sm w-52" onClick={() => dispatch(clearCart())}>Limpiar el carrito</button>
     </div>
   )
 }
