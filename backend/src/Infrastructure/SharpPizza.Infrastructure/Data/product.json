@@ -1,0 +1,20 @@
+[
+    {
+        "nombre" : "Pizza 3 quesos",
+        "precio": 9,
+        "descripcion": "Pizza de tres quesos con carnes",
+        "rating": 5,
+        "vendedor":"SharpPizza",
+        "stock": 10,
+        "categoryId": 1
+    },
+    {
+        "nombre" : "Pizza Vegetariana",
+        "precio": 45,
+        "descripcion": "Para vegetarianos",
+        "rating": 5,
+        "vendedor":"SharpPizza",
+        "stock": 5,
+        "categoryId": 2
+    }
+]

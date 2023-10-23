@@ -1,0 +1,17 @@
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Application.deps.json
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Application.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Application.pdb
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Domain.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Domain.pdb
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.AssemblyInfo.cs
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.csproj.CopyComplete
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\refint\SharpPizza.Application.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.pdb
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\ref\SharpPizza.Application.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\bin\Debug\net7.0\SharpPizza.Application.runtimeconfig.json
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Application\obj\Debug\net7.0\SharpPizza.Application.genruntimeconfig.cache

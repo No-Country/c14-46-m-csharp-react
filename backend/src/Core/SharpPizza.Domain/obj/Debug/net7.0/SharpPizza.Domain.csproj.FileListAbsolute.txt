@@ -1,0 +1,12 @@
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\bin\Debug\net7.0\SharpPizza.Domain.deps.json
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\bin\Debug\net7.0\SharpPizza.Domain.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\bin\Debug\net7.0\SharpPizza.Domain.pdb
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.AssemblyInfo.cs
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\refint\SharpPizza.Domain.dll
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\SharpPizza.Domain.pdb
+C:\Users\angel\Desktop\SolucionFinal\backend\src\Core\SharpPizza.Domain\obj\Debug\net7.0\ref\SharpPizza.Domain.dll
