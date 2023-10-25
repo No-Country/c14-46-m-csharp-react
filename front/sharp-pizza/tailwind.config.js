@@ -2,28 +2,16 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens: {
-      // Small devices such as mobile phones
-      sm: '480px',
-      // => @media (min-width: 640px) { ... }
-
-      // Larger devices like tablets
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
-
-      // Medium size laptops and screens
-      lg: '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      // Pantallas más grandes como las de escritorio
-      xl: '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      // Extra large screens or high resolution screens
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    },
     extend: {},
+    screens: {
+      xxs: '0px', // Extra extra small
+      xs: '320px', // Extra small
+      sm: '576px', // Small
+      md: '768px', // Medium
+      lg: '1024px', // Large
+      xl: '1280px', // Extra large
+      '2xl': '1536px', // Extra extra large
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
