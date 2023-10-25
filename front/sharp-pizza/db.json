@@ -604,6 +604,43 @@
       "orderPrice": 138,
       "status": "preparacion",
       "id": 12
+    },
+    {
+      "orderId": "f9e006c7a9",
+      "customer": "gaston rios",
+      "phone": "92994184677",
+      "address": "moron 145",
+      "date": "24/10/2023, 16:18:45",
+      "products": [
+        {
+          "id": 2,
+          "name": "Capricciosa",
+          "quantity": 1,
+          "unitPrice": 14
+        },
+        {
+          "id": 1,
+          "name": "Margherita",
+          "quantity": 2,
+          "unitPrice": 12
+        },
+        {
+          "id": 4,
+          "name": "Prosciutto e Rucola",
+          "quantity": 3,
+          "unitPrice": 16
+        },
+        {
+          "id": 5,
+          "name": "Diavola",
+          "quantity": 3,
+          "unitPrice": 16
+        }
+      ],
+      "paymentMethod": "mercado pago",
+      "orderPrice": 134,
+      "status": "preparacion",
+      "id": 13
     }
   ]
 }
