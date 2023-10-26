@@ -29,7 +29,7 @@ const Header = () => {
       />
 
       <div className='flex justify-center items-center gap-4'>
-        {!username && <Link to={'/login'} >
+        {!username && <Link to={'/login'} className='font-bold' >
           INICIAR SESION
         </Link>}
         <Username />
