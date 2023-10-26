@@ -12,7 +12,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10 px-4'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10 px-4 py-20'>
       {menu.map((item) => (
         <MenuItem key={item.id} item={item} />
       ))}
