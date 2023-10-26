@@ -14,7 +14,7 @@ const Header = () => {
   const handleLogout = () => {
     dispatch(logout());
     dispatch(clearCart());
-    navigate('/login');
+    navigate('/');
   };
 
   return (
@@ -29,16 +29,22 @@ const Header = () => {
       />
 
       <div className='flex justify-center items-center gap-4'>
-        <Link to={'/cart'}>
-          <BsFillCartPlusFill size={25} />
-        </Link>
+        {!username && <Link to={'/login'} >
+          INICIAR SESION
+        </Link>}
         <Username />
         {username && (
-          <HiOutlineLogout
-            size={25}
-            onClick={handleLogout}
-            className='cursor-pointer'
-          />
+          <div className='flex justify-center items-center gap-4'>
+            <Link to={'/cart'}>
+              <BsFillCartPlusFill size={25} />
+            </Link>
+
+            <HiOutlineLogout
+              size={25}
+              onClick={handleLogout}
+              className='cursor-pointer'
+            />
+          </div>
         )}
       </div>
     </header>
