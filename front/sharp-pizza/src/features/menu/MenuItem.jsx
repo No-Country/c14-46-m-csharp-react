@@ -34,7 +34,7 @@ const MenuItem = ({ item }) => {
   };
 
   return (
-    <div className='card w-full sm:w-96 shadow-xl bg-blue-100 rounded-3xl mb-3'>
+    <div className='card w-full sm:w-96 shadow-xl bg-blue-100 rounded-3xl mb-3 gap-4 mx-auto'>
       <figure>
         <img src={item.imageUrl} alt={item.name} className='w-full' />
       </figure>
