@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../features/user/userSlice';
 import { clearCart } from '../features/cart/cartSlice';
 import { BsFillCartPlusFill } from 'react-icons/bs';
+import toast from 'react-hot-toast';
 
 const Header = () => {
   const username = useSelector((state) => state.user.name);
@@ -15,6 +16,7 @@ const Header = () => {
     dispatch(logout());
     dispatch(clearCart());
     navigate('/');
+    toast.success('Sesión cerrada! Vuelva pronto.');
   };
 
   return (
