@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
-      <Toaster toastOptions={{ duration: 3000 }} />
+      <Toaster position='bottom-center' toastOptions={{ duration: 3000 }} />
     </Provider>
   </React.StrictMode>,
 )
