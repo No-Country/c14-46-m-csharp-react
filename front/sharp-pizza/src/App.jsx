@@ -8,6 +8,7 @@ import Layout from './ui/Layout';
 import Login from './features/login/Login';
 import Register from './features/register/Register';
 import Error from './ui/Error';
+import Payment from './features/order/Payment';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/order/',
         element: <Order />,
+      },
+      {
+        path: '/order/payment',
+        element: <Payment />,
       },
     ],
   },
