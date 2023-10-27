@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getOrders } from "../../services/apiPizza";
 import OrderItem from "./OrderItem";
 import { useParams } from "react-router";
+import { getStatus } from "../../utils/status";
 
 const Order = () => {
   const [orders, setOrders] = useState([]);
@@ -17,16 +18,7 @@ const Order = () => {
   const lastOrder = orders[orders.length - 1]
   const order = id ? searchedOrder : lastOrder
 
-  const getStatus = (date1, date2) => {
-    const differenceInMinutes = Math.abs(date2 - date1) / (1000 * 60);
-    if (differenceInMinutes < 15) {
-      return 'en preparacion'
-    } else if (differenceInMinutes < 30) {
-      return 'en delivery'
-    } else {
-      return 'entregado'
-    }
-  };
+
 
   const orderDate = searchedOrder ? searchedOrder?.date : lastOrder?.date
   const currentDate = new Date()
