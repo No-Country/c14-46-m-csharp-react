@@ -88,13 +88,13 @@ const CreateOrder = () => {
           <legend>Seleccionar método de pago:</legend>
 
           <div>
-            <input type="radio" id="cash" {...register('paymentMethod')} value="efectivo" required />
-            <label htmlFor="cash">Efectivo (paga al delivery)</label>
+            <input type="radio" id="efectivo" {...register('paymentMethod')} value="efectivo" required />
+            <label htmlFor="efectivo">Efectivo (paga al delivery)</label>
           </div>
 
           <div>
-            <input type="radio" id="mp" {...register('paymentMethod')} value="mercado pago" required />
-            <label htmlFor="mp">Mercado Pago</label>
+            <input type="radio" id="tarjeta" {...register('paymentMethod')} value="tarjeta" required />
+            <label htmlFor="tarjeta">Tarjeta de credito / debito</label>
           </div>
 
         </fieldset>
