@@ -3,7 +3,7 @@ import EmptyCart from "../cart/EmptyCart"
 import toast from "react-hot-toast"
 import axios from "axios"
 import { clearCart, getTotalPrice } from "../cart/cartSlice"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { ZodType, z } from "zod"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -88,13 +88,14 @@ const CreateOrder = () => {
           <legend>Seleccionar método de pago:</legend>
 
           <div>
-            <input type="radio" id="efectivo" {...register('paymentMethod')} value="efectivo" required />
+            <input type="radio" id="efectivo" {...register('paymentMethod')} value="efectivo" />
             <label htmlFor="efectivo">Efectivo (paga al delivery)</label>
           </div>
 
-          <div>
-            <input type="radio" id="tarjeta" {...register('paymentMethod')} value="tarjeta" required />
+          <div className="flex gap-2">
+            <input type="radio" id="tarjeta" {...register('paymentMethod')} value="tarjeta" checked />
             <label htmlFor="tarjeta">Tarjeta de credito / debito</label>
+            <Link to={'/order/payment'} className="font-bold">PROCESAR PAGO</Link>
           </div>
 
         </fieldset>
