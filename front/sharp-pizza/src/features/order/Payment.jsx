@@ -1,8 +1,12 @@
 import { useState } from "react"
 import Cards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
+  const navigate = useNavigate()
+  const [loading, setLoading] = useState(false)
   const [cardData, setCardData] = useState({
     number: '',
     expiry: '',
@@ -24,6 +28,11 @@ const Payment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setLoading(true)
+    setTimeout(() => {
+      navigate('/order/new')
+      toast.success('Datos de tarjeta procesados. Completa la compra.')
+    }, 3000)
   }
 
   return (
@@ -56,7 +65,7 @@ const Payment = () => {
           <label htmlFor="cvc">Código de seguridad</label>
           <input type="text" name="cvc" id="cvc" value={cvc} onChange={handleInputChange} onFocus={handleInputFocus} className="input input-success bg-slate-800 input-sm w-full" />
         </div>
-        <button type='submit' className="btn btn-success btn-sm">Buy now</button>
+        {loading ? <button type='submit' className="btn btn-success btn-sm loading loading-spinner text-primary">Loading</button> : <button type='submit' className="btn btn-success btn-sm">Buy now</button>}
       </form>
     </div>
   )
