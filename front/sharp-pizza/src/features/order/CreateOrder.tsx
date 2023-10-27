@@ -47,7 +47,7 @@ const CreateOrder = () => {
       products,
       paymentMethod: data.paymentMethod,
       orderPrice: totalPrice,
-      status: 'preparacion'
+      // status: 'preparacion'
     }).then(() => {
       navigate('/order')
       dispatch(clearCart())
