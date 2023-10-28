@@ -14,7 +14,7 @@ const Order = () => {
     })
   }, [])
 
-  const searchedOrder = orders.find(order => order.orderId === id)
+  const searchedOrder = orders.find(order => order._id === id)
   const lastOrder = orders[orders.length - 1]
   const order = id ? searchedOrder : lastOrder
 
@@ -28,7 +28,7 @@ const Order = () => {
   return (
     <div className="p-44 bg-stone-100 rounded-lg space-y-8 h-screen text-slate-900">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-xl font-semibold ">Pedido #{order?.orderId}</h2>
+        <h2 className="text-xl font-semibold ">Pedido #{order?._id}</h2>
 
         <div className="space-x-2">
           <span className={`rounded-full ${status !== 'entregado' ? 'bg-red-500' : 'bg-green-500'} px-3 py-1 text-sm font-semibold uppercase traking-wide text-green-50`}>Pedido: {status}</span>
@@ -43,7 +43,7 @@ const Order = () => {
 
       <ul className="divide-stone-200 divide-y border-b border-t">
         {order?.products.map(product => (
-          <OrderItem key={product.id} quantity={product.quantity} name={product.name} totalPrice={product.unitPrice * product.quantity} />
+          <OrderItem key={product._id} quantity={product.quantity} name={product.name} totalPrice={product.unitPrice * product.quantity} />
         ))}
       </ul>
 
