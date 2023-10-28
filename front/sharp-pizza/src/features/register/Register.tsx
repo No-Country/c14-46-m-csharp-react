@@ -59,14 +59,12 @@ const Register = () => {
   });
 
   const submitData = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3001/user', {
+    toast.promise(axios.post('http://localhost:3000/users', {
       name: data.fullName,
       password: data.password,
-      role: 'user',
       phone: data.phoneNumber,
       email: data.email,
-      address: data.address,
-      urlImg: 'https://cdn-icons-png.flaticon.com/512/1144/1144760.png'
+      address: data.address
     }).then(() => {
       navigate('/login')
     }), {
