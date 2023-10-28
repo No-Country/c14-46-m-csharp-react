@@ -38,7 +38,7 @@ const CreateOrder = () => {
   })
 
   const handleOrder = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3001/order', {
+    toast.promise(axios.post('http://localhost:3000/orders', {
       orderId: Math.floor(Math.random() * Date.now()).toString(16),
       customer: data.customer,
       phone: data.phone,
@@ -47,7 +47,6 @@ const CreateOrder = () => {
       products,
       paymentMethod: data.paymentMethod,
       orderPrice: totalPrice,
-      // status: 'preparacion'
     }).then(() => {
       navigate('/order')
       dispatch(clearCart())
