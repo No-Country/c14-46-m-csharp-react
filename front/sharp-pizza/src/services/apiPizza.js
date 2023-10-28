@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001"
+const API_URL = "http://localhost:3000"
 
 export const getMenu = async () => {
   const response = await fetch(`${API_URL}/menu`)
@@ -12,7 +12,7 @@ export const getMenu = async () => {
 }
 
 export const getUsers = async () => {
-  const response = await fetch(`${API_URL}/user`)
+  const response = await fetch(`${API_URL}/users`)
 
   if (!response.ok) {
     throw new Error("Failed to fetch users")
@@ -23,7 +23,7 @@ export const getUsers = async () => {
 }
 
 export const getOrders = async () => {
-  const response = await fetch(`${API_URL}/order`)
+  const response = await fetch(`${API_URL}/orders`)
 
   if (!response.ok) {
     throw new Error("Failed to fetch orders")
