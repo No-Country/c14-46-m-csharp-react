@@ -3,6 +3,7 @@ import { getOrders } from "../../services/apiPizza";
 import OrderItem from "./OrderItem";
 import { useParams } from "react-router";
 import { getStatus } from "../../utils/status";
+import { formatDate } from "../../utils/formatDate";
 
 const Order = () => {
   const [orders, setOrders] = useState([]);
@@ -18,11 +19,8 @@ const Order = () => {
   const lastOrder = orders[orders.length - 1]
   const order = id ? searchedOrder : lastOrder
 
-
-
   const orderDate = searchedOrder ? searchedOrder?.date : lastOrder?.date
   const currentDate = new Date()
-
   const status = getStatus(Date.parse(orderDate), Date.parse(currentDate))
 
   return (
@@ -36,7 +34,7 @@ const Order = () => {
       </div>
 
       <div>
-        <p className="text-sm text-stone-500">👉️ Fecha y hora del pedido: {orderDate}</p>
+        <p className="text-sm text-stone-500">👉️ Fecha y hora del pedido: {formatDate(orderDate)} hs.</p>
         <p className="text-sm text-stone-500">👉️ Pedido a nombre de: {order?.customer.toUpperCase()}</p>
         <p className="text-sm text-stone-500">👉️ Medio de pago: {order?.paymentMethod.toUpperCase()}</p>
       </div>
