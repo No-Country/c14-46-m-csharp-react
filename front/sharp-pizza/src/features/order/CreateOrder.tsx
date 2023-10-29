@@ -38,7 +38,7 @@ const CreateOrder = () => {
   })
 
   const handleOrder = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3000/orders', {
+    toast.promise(axios.post('https://sharp-pizza-api.onrender.com/orders', {
       orderId: Math.floor(Math.random() * Date.now()).toString(16),
       customer: data.customer,
       phone: data.phone,

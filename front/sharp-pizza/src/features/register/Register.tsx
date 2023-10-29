@@ -59,7 +59,7 @@ const Register = () => {
   });
 
   const submitData = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3000/users', {
+    toast.promise(axios.post('https://sharp-pizza-api.onrender.com/users', {
       name: data.fullName,
       password: data.password,
       phone: data.phoneNumber,
