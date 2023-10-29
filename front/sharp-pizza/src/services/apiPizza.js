@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000"
+const API_URL = "https://sharp-pizza-api.onrender.com"
 
 export const getMenu = async () => {
   const response = await fetch(`${API_URL}/menu`)
