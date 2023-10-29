@@ -43,7 +43,7 @@ const Order = () => {
 
       <ul className="divide-stone-200 divide-y border-b border-t">
         {order?.products.map(product => (
-          <OrderItem key={product._id} quantity={product.quantity} name={product.name} totalPrice={product.unitPrice * product.quantity} />
+          <OrderItem key={product.id} quantity={product.quantity} name={product.name} totalPrice={product.unitPrice * product.quantity} />
         ))}
       </ul>
 
