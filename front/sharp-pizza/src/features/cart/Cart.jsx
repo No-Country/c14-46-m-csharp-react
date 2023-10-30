@@ -14,7 +14,7 @@ const Cart = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-4 p-24 bg-stone-100 h-screen">
       <Link to={'/menu'}>&larr; Volver al menu</Link>
-      <h1 className="text-2xl text-slate-900">Tu pedido, {username}</h1>
+      <h1 className="text-2xl text-slate-900">Tu pedido, {username.split(' ')[0].slice(0, 1).toUpperCase() + username.split(' ')[0].slice(1)}</h1>
 
       {products.map(product => (
         <CartItem key={product.id} product={product} />

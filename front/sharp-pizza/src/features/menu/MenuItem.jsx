@@ -14,11 +14,11 @@ const MenuItem = ({ item }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const currentQuantity = useSelector(getCurrentQuantityById(item.id));
+  const currentQuantity = useSelector(getCurrentQuantityById(item._id));
   const currentUser = useSelector((state) => state.user);
 
   const newItem = {
-    id: item.id,
+    id: item._id,
     name: item.name,
     quantity: 1,
     unitPrice: item.unitPrice,
@@ -63,10 +63,10 @@ const MenuItem = ({ item }) => {
 
           {currentQuantity > 0 && (
             <div className='flex items-center justify-center gap-2'>
-              <UpdateItems id={item.id} quantity={currentQuantity} />
+              <UpdateItems id={item._id} quantity={currentQuantity} />
               <button
                 className='btn btn-warning btn-xs sm:btn-sm'
-                onClick={() => dispatch(deleteProduct(item.id))}
+                onClick={() => dispatch(deleteProduct(item._id))}
               >
                 Quitar
               </button>

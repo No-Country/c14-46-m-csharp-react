@@ -61,26 +61,19 @@ const Register = () => {
   });
 
   const submitData = (data: FormData) => {
-    toast.promise(
-      axios
-        .post('http://localhost:3001/user', {
-          name: data.fullName,
-          password: data.password,
-          role: 'user',
-          phone: data.phoneNumber,
-          email: data.email,
-          address: data.address,
-          urlImg: 'https://cdn-icons-png.flaticon.com/512/1144/1144760.png',
-        })
-        .then(() => {
-          navigate('/login');
-        }),
-      {
-        loading: 'Registrando...',
-        success: 'Registrado con éxito 🍕️',
-        error: 'Error en el proceso de registro. Por favor intente más tarde.',
-      }
-    );
+    toast.promise(axios.post('https://sharp-pizza-api.onrender.com/users', {
+      name: data.fullName,
+      password: data.password,
+      phone: data.phoneNumber,
+      email: data.email,
+      address: data.address
+    }).then(() => {
+      navigate('/login')
+    }), {
+    loading: 'Registrando...',
+    success: 'Registrado con exito 🍕️',
+    error: 'Error en proceso de registro. Por favor intente mas tarde.',
+    })
   };
 
   return (

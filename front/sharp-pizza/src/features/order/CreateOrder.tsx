@@ -3,7 +3,7 @@ import EmptyCart from "../cart/EmptyCart"
 import toast from "react-hot-toast"
 import axios from "axios"
 import { clearCart, getTotalPrice } from "../cart/cartSlice"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { ZodType, z } from "zod"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -38,7 +38,7 @@ const CreateOrder = () => {
   })
 
   const handleOrder = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3001/order', {
+    toast.promise(axios.post('https://sharp-pizza-api.onrender.com/orders', {
       orderId: Math.floor(Math.random() * Date.now()).toString(16),
       customer: data.customer,
       phone: data.phone,
@@ -47,7 +47,6 @@ const CreateOrder = () => {
       products,
       paymentMethod: data.paymentMethod,
       orderPrice: totalPrice,
-      status: 'preparacion'
     }).then(() => {
       navigate('/order')
       dispatch(clearCart())
@@ -88,13 +87,14 @@ const CreateOrder = () => {
           <legend>Seleccionar método de pago:</legend>
 
           <div>
-            <input type="radio" id="cash" {...register('paymentMethod')} value="efectivo" required />
-            <label htmlFor="cash">Efectivo (paga al delivery)</label>
+            <input type="radio" id="efectivo" {...register('paymentMethod')} value="efectivo" />
+            <label htmlFor="efectivo">Efectivo (paga al delivery)</label>
           </div>
 
-          <div>
-            <input type="radio" id="mp" {...register('paymentMethod')} value="mercado pago" required />
-            <label htmlFor="mp">Mercado Pago</label>
+          <div className="flex gap-2">
+            <input type="radio" id="tarjeta" {...register('paymentMethod')} value="tarjeta" checked />
+            <label htmlFor="tarjeta">Tarjeta de credito / debito</label>
+            <Link to={'/order/payment'} className="font-bold">PROCESAR PAGO</Link>
           </div>
 
         </fieldset>

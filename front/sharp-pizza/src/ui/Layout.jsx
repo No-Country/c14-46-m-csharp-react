@@ -2,8 +2,6 @@ import { Outlet } from 'react-router-dom';
 import CartOverview from '../features/cart/CartOverview';
 import Header from './Header';
 import { useSelector } from 'react-redux';
-import { Toaster } from 'react-hot-toast';
-
 
 const Layout = () => {
 
@@ -11,8 +9,6 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Toaster toastOptions={{ duration: 3000 }} />
-
       <main>
         <Outlet />
       </main>
