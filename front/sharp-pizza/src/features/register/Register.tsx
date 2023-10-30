@@ -28,25 +28,27 @@ const Register = () => {
         .max(30),
       email: z
         .string()
-        .email({ message: 'Dirección de correo invalida' })
+        .email({ message: 'Dirección de correo inválida' })
         .min(6, {
           message: 'El correo debe tener al menos 6 caracteres',
         }),
       phoneNumber: z
         .string()
         .refine((value) => value.replace(/\D/g, '').length > 9, {
-          message: 'Ingrese un número de telefono válido',
+          message: 'Ingrese un número de teléfono válido',
         }),
-      address: z.string().min(6, { message: 'La dirección debe tener al menos 6 caracteres' }),
+      address: z
+        .string()
+        .min(6, { message: 'La dirección debe tener al menos 6 caracteres' }),
       password: z
         .string()
-        .min(6, { message: 'La contraseña debe tener al menos 6 caracteres' }),
+        .min(6, { message: 'La contraseña debe tener al menos 6 caracteres' }),
       confirmPassword: z
         .string()
-        .min(6, { message: 'La contraseña debe tener al menos 6 caracteres' }),
+        .min(6, { message: 'La contraseña debe tener al menos 6 caracteres' }),
     })
     .refine((data) => data.password === data.confirmPassword, {
-      message: 'Las contraseñas no coinciden',
+      message: 'Las contraseñas no coinciden',
       path: ['confirmPassword'],
     });
 
@@ -59,129 +61,171 @@ const Register = () => {
   });
 
   const submitData = (data: FormData) => {
-    toast.promise(axios.post('http://localhost:3001/user', {
-      name: data.fullName,
-      password: data.password,
-      role: 'user',
-      phone: data.phoneNumber,
-      email: data.email,
-      address: data.address,
-      urlImg: 'https://cdn-icons-png.flaticon.com/512/1144/1144760.png'
-    }).then(() => {
-      navigate('/login')
-    }), {
-    loading: 'Registrando...',
-    success: 'Registrado con exito 🍕️',
-    error: 'Error en proceso de registro. Por favor intente mas tarde.',
-    })
+    toast.promise(
+      axios
+        .post('http://localhost:3001/user', {
+          name: data.fullName,
+          password: data.password,
+          role: 'user',
+          phone: data.phoneNumber,
+          email: data.email,
+          address: data.address,
+          urlImg: 'https://cdn-icons-png.flaticon.com/512/1144/1144760.png',
+        })
+        .then(() => {
+          navigate('/login');
+        }),
+      {
+        loading: 'Registrando...',
+        success: 'Registrado con éxito 🍕️',
+        error: 'Error en el proceso de registro. Por favor intente más tarde.',
+      }
+    );
   };
+
   return (
-    <div className='min-h-screen flex items-center justify-center bg-stone-100'>
-
+    <div className='flex items-center justify-center h-screen'>
       <form
-        className='bg-lime-200 shadow-2xl rounded-lg px-8 pt-6 pb-2 mb-1 w-full max-w-md'
         onSubmit={handleSubmit(submitData)}
+        className='w-full max-w-md p-6 bg-gray-900 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-900 dark:border-gray-700'
       >
-        <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>Nombre Completo</label>
-          <input
-            id='fullName'
-            className='input input-bordered input-sm w-full'
-            type='text'
-            {...register('fullName')}
-            placeholder='Nombre Completo...'
-          />
-          {errors.fullName && (
-            <span className='text-red-600'>{errors.fullName.message}</span>
-          )}
+        <h1 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
+          Crear Cuenta
+        </h1>
+        <p className='mb-4 text-sm text-gray-700 dark:text-gray-400'>
+          Rellena los siguientes campos para registrarte
+        </p>
+        <div className='mb-4 flex'>
+          <div className='mr-2'>
+            <label
+              htmlFor='fullName'
+              className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+            >
+              Nombre Completo
+            </label>
+            <input
+              type='text'
+              id='fullName'
+              {...register('fullName')}
+              placeholder='Nombre Completo...'
+              className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+              required
+            />
+            {errors.fullName && (
+              <p className='text-red-500'>{errors.fullName.message}</p>
+            )}
+          </div>
+          <div>
+            <label
+              htmlFor='email'
+              className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+            >
+              Correo Electrónico
+            </label>
+            <input
+              type='email'
+              id='email'
+              {...register('email')}
+              placeholder='Alexis@gmail.com'
+              className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+              required
+            />
+            {errors.email && (
+              <p className='text-red-500'>{errors.email.message}</p>
+            )}
+          </div>
+        </div>
+        <div className='mb-4 flex'>
+          <div className='mr-2'>
+            <label
+              htmlFor='phone_number'
+              className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+            >
+              Número de Teléfono
+            </label>
+            <input
+              type='tel'
+              id='phoneNumber'
+              {...register('phoneNumber')}
+              placeholder='555-123-4567'
+              className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+              required
+            />
+            {errors.phoneNumber && (
+              <p className='text-red-500'>{errors.phoneNumber.message}</p>
+            )}
+          </div>
+          <div>
+            <label
+              htmlFor='address'
+              className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+            >
+              Dirección
+            </label>
+            <input
+              type='text'
+              id='address'
+              {...register('address')}
+              placeholder='Av Calle 123'
+              className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+              required
+            />
+            {errors.address && (
+              <p className='text-red-500'>{errors.address.message}</p>
+            )}
+          </div>
         </div>
         <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>Email</label>
-          <input
-            id='email'
-            className='input input-success input-sm w-full'
-            type='email'
-            {...register('email')}
-            placeholder='Email...'
-          />
-          {errors.email && (
-            <span className='text-red-600'>{errors.email.message}</span>
-          )}
-        </div>
-        <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>
-            Número de teléfono
+          <label
+            htmlFor='password'
+            className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+          >
+            Contraseña
           </label>
           <input
-            id='phoneNumber'
-            className='input input-success input-sm w-full'
-            type='text'
-            {...register('phoneNumber')}
-            placeholder='Número de teléfono...'
-          />
-          {errors.phoneNumber && (
-            <span className='text-red-600'>{errors.phoneNumber.message}</span>
-          )}
-        </div>
-
-        <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>
-            Domicilio
-          </label>
-          <input
-            id='address'
-            className='input input-success input-sm w-full'
-            type='text'
-            {...register('address')}
-            placeholder='Domicilio...'
-          />
-          {errors.address && (
-            <span className='text-red-600'>{errors.address.message}</span>
-          )}
-        </div>
-
-
-        <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>Contraseña</label>
-          <input
-            className='input input-success input-sm w-full'
             type='password'
+            id='password'
             {...register('password')}
-            placeholder='Password...'
+            placeholder='********'
+            className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+            required
           />
           {errors.password && (
-            <span className='text-red-600'>{errors.password.message}</span>
+            <p className='text-red-500'>{errors.password.message}</p>
           )}
         </div>
-        <div className='mb-4'>
-          <label className='block text-xl text-slate-900'>
+        <div className='mb-6'>
+          <label
+            htmlFor='confirmPassword'
+            className='block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400'
+          >
             Confirmar Contraseña
           </label>
           <input
-            className='input input-success input-sm w-full'
-            id='confirmPassword'
             type='password'
+            id='confirmPassword'
+            placeholder='********'
             {...register('confirmPassword')}
-            placeholder='Confirm Password...'
+            className='w-full px-3 py-2 border border-gray-300 rounded-md dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+            required
           />
           {errors.confirmPassword && (
-            <span className='text-red-600'>
-              {errors.confirmPassword.message}
-            </span>
+            <p className='text-red-500'>{errors.confirmPassword.message}</p>
           )}
         </div>
-        <Link to='/login' className='text-blue-800 font-bold'>
-          Ya tengo una cuenta
+        <Link
+          to='/login'
+          className='hover:underline dark:text-blue-400 text-base'
+        >
+          Ya tengo cuenta
         </Link>
         <button
           type='submit'
-          className='btn btn-active btn-primary btn-sm w-full mt-5'
+          className='w-full px-4 mt-2 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus-bg-blue-600'
         >
-          Registrarme
+          Register
         </button>
       </form>
-
-      
     </div>
   );
 };
