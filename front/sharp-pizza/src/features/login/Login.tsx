@@ -16,13 +16,13 @@ type FormData = {
 const Login = () => {
   const [users, setUsers] = React.useState([]);
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getUsers().then(data => {
-      setUsers(data)
-    })
-  }, [])
+    getUsers().then((data) => {
+      setUsers(data);
+    });
+  }, []);
 
   const schema: ZodType<FormData> = z.object({
     email: z.string().email({ message: 'Dirección de correo inválida' }),
@@ -38,57 +38,87 @@ const Login = () => {
   });
 
   const submitData = (data: FormData) => {
-  const loggedUser = users.find(user => user.email === data.email)
+    const loggedUser = users.find((user) => user.email === data.email);
 
-    if(data.email === loggedUser?.email && data.password === loggedUser?.password){
-      toast.success('Logueado con exito')
-      dispatch(updateUser(loggedUser))
-      navigate('/menu')
+    if (
+      data.email === loggedUser?.email &&
+      data.password === loggedUser?.password
+    ) {
+      toast.success('Logueado con exito');
+      dispatch(updateUser(loggedUser));
+      navigate('/menu');
     } else {
-      toast.error('Email o contraseña incorrectos')
+      toast.error('Email o contraseña incorrectos');
     }
   };
   return (
-    <div className='min-h-screen flex items-center justify-center bg-stone-100 px-6'>
-      <div className='max-w-md w-full bg-lime-200 p-6 rounded-lg shadow-lg'>
-        <form onSubmit={handleSubmit(submitData)}>
-          <div className='mb-4'>
-            <label className='block text-xl text-slate-900'>Email</label>
-            <input
-              className='input input-success bg-slate-900 input-sm w-full'
-              type='email'
-              {...register('email')}
-              placeholder='Email...'
-            />
-            {errors.email && (
-              <span className='text-red-600'>{errors.email.message}</span>
-            )}
+    <div className='flex items-center justify-center h-screen'>
+      <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-900 dark:text-gray-100'>
+        <div className='mb-8 text-center'>
+          <h1 className='my-3 text-4xl font-bold'>Iniciar Sesión</h1>
+          <p className='text-sm dark:text-gray-400'>
+            Inicia sesión para acceder a tu cuenta
+          </p>
+        </div>
+        <form onSubmit={handleSubmit(submitData)} className='space-y-12'>
+          <div className='space-y-4'>
+            <div>
+              <label htmlFor='email' className='block mb-2 text-sm'>
+                Correo Electrónico
+              </label>
+              <input
+                type='email'
+                {...register('email')}
+                id='email'
+                placeholder='leroy@jenkins.com'
+                className='w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100'
+              />
+              {errors.email && (
+                <span className='text-red-600'>{errors.email.message}</span>
+              )}
+            </div>
+            <div>
+              <div className='flex justify-between mb-2'>
+                <label htmlFor='password' className='text-sm'>
+                  Contraseña
+                </label>
+                <Link
+                  to='/forgotPassword'
+                  className='text-xs hover:underline dark:text-gray-400'
+                >
+                  Olvidé Mi Contraseña
+                </Link>
+              </div>
+              <input
+                type='password'
+                {...register('password')}
+                id='password'
+                placeholder='*********'
+                className='w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100'
+              />
+              {errors.password && (
+                <span className='text-red-600'>{errors.password.message}</span>
+              )}
+            </div>
           </div>
-          <div className='mb-4'>
-            <label className='block text-xl text-slate-800'>Password</label>
-            <input
-              className='input input-success bg-slate-800 input-sm w-full'
-              type='password'
-              {...register('password')}
-              placeholder='Contraseña...'
-            />
-            {errors.password && (
-              <span className='text-red-600'>{errors.password.message}</span>
-            )}
+          <div className='space-y-2'>
+            <div>
+              <button
+                type='button'
+                className='w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900'
+              >
+                Iniciar Sesión
+              </button>
+            </div>
+            <p className='px-6 text-sm text-center dark:text-gray-400'>
+              Todavía No Tienes Una Cuenta?
+              <Link to='/register' className='text-blue-600 font-bold'>
+                {' '}
+                Crear Cuenta
+              </Link>
+              .
+            </p>
           </div>
-          <a href='/register' className='text-blue-800 font-bold'>
-            Olvidé mi contraseña
-          </a>
-          <br />
-          <Link to='/register' className='text-blue-800 font-bold'>
-            Crear Cuenta
-          </Link>
-          <button
-            type='submit'
-            className='btn btn-active btn-primary btn-sm w-full mt-5'
-          >
-            Iniciar Sesión
-          </button>
         </form>
       </div>
     </div>
