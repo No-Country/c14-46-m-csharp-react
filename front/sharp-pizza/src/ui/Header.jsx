@@ -29,13 +29,13 @@ const Header = () => {
 
   return (
     <header className='flex fixed top-0 mb-10 justify-between items-center bg-[#0a192f] h-20 w-full px-10 z-10 '>
-      <Link to={'/'} className='text-3xl font-bold'>
+      <Link to={'/'} className='text-xl font-bold sm:text-3xl'>
         sharp pizza
       </Link>
       <input
         type='text'
-        placeholder='Busca Un Pedido...'
-        className='input input-bordered w-full max-w-xs'
+        placeholder='Buscar...'
+        className='input input-bordered w-full max-w-xs mx-4 placeholder-green-300'
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleSearch}
