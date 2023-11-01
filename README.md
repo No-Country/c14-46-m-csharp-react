@@ -20,7 +20,7 @@
     Sharp-Pizza es una aplicación para el pedido de pizzas a domicilio con posibilidad de pago en efectivo al delivery o con tarjeta de crédito dentro de la misma app. Para usar la app el usuario debe registrarse y crear una cuenta.
     <br />
     <br />
-    <a href="https://c14-46-m-csharp-react.vercel.app/" target="_blank">Ver Demo</a>
+    <a href="https://www.canva.com/design/DAFy2iv2JTA/gID8QKREOO5bxzqeWICGXQ/watch?utm_content=DAFy2iv2JTA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Ver Video Promocional</a>
     ·
     <a href="https://github.com/No-Country/c14-46-m-csharp-react/issues" target="_blank">Reportar Bug</a>
   </p>
@@ -93,7 +93,7 @@ Clonar este repositorio y ejecuta "npm install" y luego "npm run dev" desde la t
    ```
 
 O simplemente clickea en el link de 
-<a href="https://c14-46-m-csharp-react.vercel.app/" target="_blank">Ver Demo.</a>
+<a href="https://c14-46-m-csharp-react.vercel.app/" target="_blank">Visitar App</a>
 
 <h1 align="center"> 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lvcWx2Ynpia3BjYnk3Yzlvdmw1cnBjdHI3cm5uY3QzenM1enNibiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/igPDtkfSJZMFwE0LP8/giphy.gif" width="30px">Guía Básica de uso
@@ -200,13 +200,15 @@ Si los datos son procesados correctamente, un mensaje emergente confirmando que 
   </tr>
 </table>
 
-
+<br>
+<hr>
 <h1 align="center"> 
 <img src="https://media0.giphy.com/media/odMfXhzCqknOCYrNdU/giphy.gif" width="30px">Video
 </h1>
+<hr/>
+<br>
 
-
-<p align="center"><a href="" target="_blank" rel="noopener noreferrer"><img src=""/></a></p>
+<p align="center"><a href="https://www.canva.com/design/DAFy2iv2JTA/gID8QKREOO5bxzqeWICGXQ/watch?utm_content=DAFy2iv2JTA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer"><img src="./images/home.png"/></a></p>
 
 
 <h1 align="center"> 
