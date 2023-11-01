@@ -95,7 +95,6 @@ Clonar este repositorio y ejecuta "npm install" y luego "npm run dev" desde la t
 O simplemente clickea en el link de 
 <a href="https://c14-46-m-csharp-react.vercel.app/" target="_blank">Ver Demo.</a>
 
-<!-- USAGE EXAMPLES -->
 <h1 align="center"> 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lvcWx2Ynpia3BjYnk3Yzlvdmw1cnBjdHI3cm5uY3QzenM1enNibiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/igPDtkfSJZMFwE0LP8/giphy.gif" width="30px">Guía Básica de uso
 </h1>
@@ -115,10 +114,10 @@ Si los datos son procesados correctamente, un mensaje emergente confirmado que e
   <tr>
     <td>
       <div align="center">
-        <a href="https://www.linkedin.com/in/octavio-macchi-767762242/" target="_blank" rel="author">
-          <img width="110" src="https://avatars.githubusercontent.com/u/20444371?v=4"/>
+        <a href="https://github.com/Theo1982" target="_blank" rel="author">
+          <img width="110" src="https://media.licdn.com/dms/image/D4D35AQGVufpLFzVdQg/profile-framedphoto-shrink_800_800/0/1695659469529?e=1699412400&v=beta&t=k-VwmVIckUdKEtFsJdN4yYKsytaQp2VfSm1HvRK36KI"/>
         </a>
-        <a href="https://www.linkedin.com/in/octavio-macchi-767762242/" target="_blank" rel="author">
+        <a href="https://github.com/Theo1982" target="_blank" rel="author">
           <h4 style="margin-top: 1rem;">Octavio Macchi</h4>
           <h4 style="margin-top: 1rem;">Back-end Developer</h4>
         </a>
@@ -126,6 +125,40 @@ Si los datos son procesados correctamente, un mensaje emergente confirmado que e
           <img src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
         </a>
         <a href="https://www.linkedin.com/in/octavio-macchi-767762242/  " target="_blank">
+          <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <a href="https://github.com/Mecht21" target="_blank" rel="author">
+          <img width="110" src="https://media.licdn.com/dms/image/D4E03AQEech6u3Gk_rA/profile-displayphoto-shrink_800_800/0/1670554522056?e=1704326400&v=beta&t=qQ4Hh5Qqc5oN5oEwNEDMLzdCKsO2pJFIKLvwQecEC7g"/>
+        </a>
+        <a href="https://github.com/Mecht21" target="_blank" rel="author">
+          <h4 style="margin-top: 1rem;">Daniel Serrano</h4>
+          <h4 style="margin-top: 1rem;">Back-end Developer</h4>
+        </a>
+        <a href="https://github.com/Mecht21" target="_blank">
+          <img src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-serrano-vega/" target="_blank">
+          <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <a href="https://github.com/Kev-Villegas" target="_blank" rel="author">
+          <img width="110" src="https://avatars.githubusercontent.com/u/134943727?v=4"/>
+        </a>
+        <a href="https://github.com/Kev-Villegas" target="_blank" rel="author">
+          <h4 style="margin-top: 1rem;">Kevin Villegas</h4>
+          <h4 style="margin-top: 1rem;">Front-end Developer</h4>
+        </a>
+        <a href="https://github.com/Kev-Villegas" target="_blank">
+          <img src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
+        </a>
+        <a href="https://www.linkedin.com/in/kevin--villegas/" target="_blank">
           <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
         </a>
       </div>
