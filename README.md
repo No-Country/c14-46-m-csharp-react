@@ -99,11 +99,11 @@ O simplemente clickea en el link de
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lvcWx2Ynpia3BjYnk3Yzlvdmw1cnBjdHI3cm5uY3QzenM1enNibiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/igPDtkfSJZMFwE0LP8/giphy.gif" width="30px">Guía Básica de uso
 </h1>
 
-<p align='left'>Desde el Home es posible acceder al menu para ver la variedad de pizzas disponibles. Pero en caso de que el visitante desee agregar una pizza al carrito se lo redireccionara a la pagina de login donde debe loguearse con sus datos. En caso de no contar con cuenta, existe link que lleva a la pagina de registro.</p> 
-<p align='left'>Ya con el usuario logueado es posible comenzar a agregar pizzas al carrito. Una vez que el cliente esta satisfecho con la seleccion podra acceder al carrito donde se detalla variedad de items seleccionado y precios. Desde esa pantalla puede ajustar la cantidad de cada producto o incluso eliminarlo. Incluso es posible volver al menu principal para revisar otras variedades y retornar en cualquier momento.</p> 
-<p align='left'>En caso de que los datos del carrito son los requeridos por el usuario, tiene la opcion de proceder a crear y confirmar la order. Las opciones son con pago en efectivo al delivery o procesar el pago con targeta desde la misma app. 
-Si los datos son procesados correctamente, un mensaje emergente confirmado que el proceso fue exitoso y se regresa al menu ya con el carrito vacio.</p> 
-<p align='left'>En caso de que el usuario se desloguea, los datos se resetean y la app redirije al home.</p> 
+<p align='left'>Desde el Home es posible acceder al menu para ver la variedad de pizzas disponibles. Pero en caso de que el visitante desee agregar una pizza al carrito se lo redireccionara a la página de login donde debe loguearse con sus datos. En caso de no contar con cuenta, existe link que lleva a la página de registro.</p> 
+<p align='left'>Ya con el usuario logueado es posible comenzar a agregar pizzas al carrito. Una vez que el cliente esta satisfecho con la selección podra acceder al carrito donde se detalla variedad de items seleccionados y precios. Desde esa pantalla puede ajustar la cantidad de cada producto o incluso eliminarlo. Además es posible volver al menu principal para revisar otras variedades y retornar en cualquier momento.</p> 
+<p align='left'>En caso de que los datos del carrito son los requeridos por el usuario, tiene la opción de proceder a crear y confirmar la orden. Las opciones son con pago en efectivo al delivery o procesar el pago con targeta desde la misma app. 
+Si los datos son procesados correctamente, un mensaje emergente confirmando que el proceso fue exitoso y se regresa al menu ya con el carrito vacio.</p> 
+<p align='left'>En caso de que el usuario se desloguee, los datos se resetean y la app redirije al home.</p> 
 
 
 <h1 align="center"> 
@@ -176,6 +176,23 @@ Si los datos son procesados correctamente, un mensaje emergente confirmado que e
           <img src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
         </a>
         <a href="https://www.linkedin.com/in/emiliopino/" target="_blank">
+          <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div align="center">
+        <a href="https://github.com/GastonR81" target="_blank" rel="author">
+          <img width="110" src="https://avatars.githubusercontent.com/u/146013740?v=4"/>
+        </a>
+        <a href="https://github.com/GastonR81" target="_blank" rel="author">
+          <h4 style="margin-top: 1rem;">Gaston Ruiz</h4>
+          <h4 style="margin-top: 1rem;">Tester QA</h4>
+        </a>
+        <a href="https://github.com/GastonR81" target="_blank">
+          <img src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
+        </a>
+        <a href="https://www.linkedin.com/in/jorge-gast%C3%B3n-ruiz-574407256/" target="_blank">
           <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
         </a>
       </div>
