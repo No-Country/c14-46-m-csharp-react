@@ -104,7 +104,7 @@ const Login = () => {
           <div className='space-y-2'>
             <div>
               <button
-                type='button'
+                type='submit'
                 className='w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900'
               >
                 Iniciar Sesión

@@ -23,16 +23,17 @@ const Header = () => {
 
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
-      navigate(`/order/${query}`)
+      navigate(`/order/${query}`);
     }
-  }
+  };
 
   return (
     <header className='flex fixed top-0 mb-10 justify-between items-center bg-[#0a192f] h-20 w-full px-10 z-10 '>
       <Link to={'/'} className='text-3xl font-bold'>
-        sharp pizza
+        Sharp Pizza
       </Link>
       <input
+        id='inputSearch'
         type='text'
         placeholder='Busca Un Pedido...'
         className='input input-bordered w-full max-w-xs'
@@ -42,9 +43,11 @@ const Header = () => {
       />
 
       <div className='flex justify-center items-center gap-4'>
-        {!username && <Link to={'/login'} className='font-bold' >
-          INICIAR SESION
-        </Link>}
+        {!username && (
+          <Link to={'/login'} className='font-bold text-lg'>
+            Iniciar Sesión
+          </Link>
+        )}
         <Username />
         {username && (
           <div className='flex justify-center items-center gap-4'>
