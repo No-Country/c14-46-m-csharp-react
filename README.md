@@ -87,10 +87,20 @@
 
 Instrucciones para clonar el repo y ejecutar el proyecto localmente: 
 
-Clonar este repositorio y ejecuta "npm install" y luego "npm run dev" desde la terminal.
+1- Clonar este repositorio
    ```sh
    git clone https://github.com/No-Country/c14-46-m-csharp-react.git
    ```
+
+2- Abrir la terminal y correr el comando:
+  ```sh
+  cd front/sharp-pizza/
+  ```
+3- Finalmente ejecutar los comandos:
+  ```sh
+  npm install
+  npm run dev
+  ```
 
 O simplemente clickea en el link de 
 <a href="https://c14-46-m-csharp-react.vercel.app/" target="_blank">Visitar App</a>
@@ -203,12 +213,13 @@ Si los datos son procesados correctamente, un mensaje emergente confirmando que 
 <br>
 <hr>
 <h1 align="center"> 
-<img src="https://media0.giphy.com/media/odMfXhzCqknOCYrNdU/giphy.gif" width="30px">Video
+<img src="https://media0.giphy.com/media/odMfXhzCqknOCYrNdU/giphy.gif" width="30px">
+<a href="https://www.canva.com/design/DAFy2iv2JTA/gID8QKREOO5bxzqeWICGXQ/watch?utm_content=DAFy2iv2JTA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">Video</a>
 </h1>
 <hr/>
 <br>
 
-<p align="center"><a href="https://www.canva.com/design/DAFy2iv2JTA/gID8QKREOO5bxzqeWICGXQ/watch?utm_content=DAFy2iv2JTA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer"><img src="./images/home.png"/></a></p>
+<p align="center"><a href="https://www.canva.com/design/DAFy2iv2JTA/gID8QKREOO5bxzqeWICGXQ/watch?utm_content=DAFy2iv2JTA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer"><img src="./images/video-sharp-pizza.png"/></a></p>
 
 
 <h1 align="center"> 
