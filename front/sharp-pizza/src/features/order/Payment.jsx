@@ -76,7 +76,7 @@ const Payment = () => {
           <label htmlFor="cvc">Código de seguridad</label>
           <input type="text" name="cvc" id="cvc" value={cvc} onChange={handleInputChange} onFocus={handleInputFocus} className="input input-success bg-slate-800 input-sm w-full" required />
         </div>
-        {loading ? <button type='submit' className="btn btn-success btn-sm loading loading-spinner text-primary">Loading</button> : <button type='submit' className="btn btn-success btn-sm" onClick={handleBuy}>Buy now</button>}
+        {loading ? <button type='submit' className="btn btn-success btn-sm loading loading-spinner text-primary">Loading</button> : <button type='submit' className="btn btn-success btn-sm" onClick={handleBuy}>COMPRAR</button>}
       </form>
     </div>
   )
