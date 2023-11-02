@@ -7,6 +7,7 @@ import { clearCart } from '../features/cart/cartSlice';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import toast from 'react-hot-toast';
 import { useState } from 'react';
+import { clearPayment } from '../features/order/paymentSlice';
 
 const Header = () => {
   const username = useSelector((state) => state.user.name);
@@ -17,6 +18,7 @@ const Header = () => {
   const handleLogout = () => {
     dispatch(logout());
     dispatch(clearCart());
+    dispatch(clearPayment());
     navigate('/');
     toast.success('Sesión cerrada! Vuelva pronto.');
   };
