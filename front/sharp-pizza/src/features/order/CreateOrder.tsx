@@ -20,6 +20,7 @@ const CreateOrder = () => {
   const client = useSelector((state) => state.user);
   const products = useSelector((state) => state.cart.products);
   const totalPrice = useSelector(getTotalPrice);
+  const cardPayment = useSelector((state) => state.payment);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -36,6 +37,10 @@ const CreateOrder = () => {
   });
 
   const handleOrder = (data: FormData) => {
+  if(data.paymentMethod === 'tarjeta' && cardPayment.number === '') {
+      toast.error('Por favor completa los datos de la tarjeta haciendo click en Procesar Pago')
+      return;
+    }
     toast.promise(
       axios
         .post('https://sharp-pizza-api.onrender.com/orders', {
