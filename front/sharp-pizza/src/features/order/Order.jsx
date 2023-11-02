@@ -4,6 +4,7 @@ import OrderItem from "./OrderItem";
 import { useParams } from "react-router";
 import { getStatus } from "../../utils/status";
 import { formatDate } from "../../utils/formatDate";
+import Loader from "../../ui/Loader";
 
 const Order = () => {
   const [orders, setOrders] = useState([]);
@@ -22,6 +23,8 @@ const Order = () => {
   const orderDate = searchedOrder ? searchedOrder?.date : lastOrder?.date
   const currentDate = new Date()
   const status = getStatus(Date.parse(orderDate), Date.parse(currentDate))
+
+  if (!orderDate) return <Loader />
 
   return (
     <div className="p-44 bg-stone-100 rounded-lg space-y-8 h-screen text-slate-900">
